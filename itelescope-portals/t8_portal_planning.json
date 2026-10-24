@@ -1,0 +1,235 @@
+{
+  "telescope": "T8",
+  "portal": "https://t8.itelescope.online/index.asp",
+  "captured": "2026-10-24 15:15 PDT (obs time 2026-10-25 09:14, Siding Spring)",
+  "header": {
+    "status": "Closed: Day Time",
+    "min_elevation_deg": 23,
+    "max_exposure_s": 600,
+    "filters": [
+      "Luminance",
+      "Red",
+      "Green",
+      "Blue",
+      "Exo",
+      "Ha",
+      "SII",
+      "OIII"
+    ],
+    "next_reservation": {
+      "local_pdt": "2026-10-25 02:40",
+      "utc": "2026-10-25 09:40",
+      "obs": "2026-10-25 20:40"
+    },
+    "banner": "Full Moon \"Happy Hour\" - All Telescopes FREE for Live Imaging - 1 hr session, one telescope every night | Telescope available for Subscribed Members only",
+    "ota_card": "Takahashi FSQ ED, f5.0, Paramount PME, 530 mm, Petzval Apochromat Astrograph"
+  },
+  "one_click_image": {
+    "instructions": [
+      "Click on the SUBMIT button for the object you wish to image.",
+      "Click on System Status or View Observatory to view the status of your plan execution in real-time.",
+      "Once the exposure has finished, the image will be ready for download in approximately 5 minutes."
+    ],
+    "filters": [
+      "Red",
+      "Green",
+      "Blue"
+    ],
+    "binning": 2,
+    "notes": [
+      "Astronomical objects listed below are at least 45 degrees above the horizon.",
+      "If you are a beginner, start with the brightest targets first and work your way to the least bright.",
+      "Previews are indicative of a multiple long exposures images aligned, stacked with noise rejection and post image processing applied."
+    ],
+    "submit_form": {
+      "action": "/ac/Plans/start-singleshotplan.asp",
+      "hidden_inputs": [
+        "target",
+        "common",
+        "ra",
+        "dec",
+        "exposure"
+      ],
+      "exposure_presets": {
+        "medium": "3 x 120 s per filter, total 1080 s over R,G,B",
+        "short": "5 x 60 s per filter, total 900 s over R,G,B"
+      }
+    },
+    "tables": {
+      "Southern Skies": 26,
+      "Other Celestial Objects": 10
+    }
+  },
+  "deep_sky_plan_builder": {
+    "fields": [
+      "Plan Filename (only for Create Plan)",
+      "Target (lookup RA/Dec)",
+      "RA hrs / Dec deg J2000",
+      "View Object Framing"
+    ],
+    "limits": {
+      "min_elevation_deg": 23,
+      "max_exposure_s": 600
+    },
+    "target_options": [
+      "#REPEAT n",
+      "#DITHER"
+    ],
+    "exposure_rows": {
+      "columns": [
+        "Use",
+        "Qty",
+        "Filter",
+        "Duration (s)",
+        "Binning"
+      ],
+      "filters": [
+        "Luminance",
+        "Red",
+        "Green",
+        "Blue",
+        "Exo",
+        "Ha",
+        "SII",
+        "OIII"
+      ],
+      "binning": [
+        1,
+        2
+      ],
+      "default_rows": 4
+    },
+    "billing": {
+      "Session": "lower hourly rate, pay for all telescope operations",
+      "Exposure": "pay only for camera exposure time"
+    },
+    "advanced_directives": {
+      "#RESUME": "resume plan if terminated early (may need manual reschedule)",
+      "#SKIPPREVIEWS": "skip previews",
+      "#LARGEPREVIEWS": "large previews; triggers Session billing",
+      "#FIRSTLAST": "preview first and last only",
+      "#NORAW": "calibrated only",
+      "#NOCAL": "raw only",
+      "#TIFF": "also TIFF",
+      "#PLATESOLVE": "plate solve all (very slow); triggers Session billing",
+      "#FORCESTARTUP + #NOADAPTIVE": "focus at start, no further focus",
+      "#VPHOT": "send to VPhot (AAVSO member)",
+      "#EXPRESS": "no focus, guide, centering",
+      "#DEFOCUS": "slight defocus for photometry"
+    },
+    "actions": [
+      "ACQUIRE IMAGES NOW",
+      "CREATE PLAN FOR LATER"
+    ],
+    "url": "https://t8.itelescope.online/index.asp#Deep%20Sky%20Imaging%20and%20Planning"
+  },
+  "run_saved_plan": {
+    "limits": "max imaging time 600 s, min elevation 23 deg; suggest >=45 deg",
+    "calibration": "Master Bias Bin1, Darks 600 s Bin1 (dark scaled with bias)",
+    "outputs": [
+      "raw 16-bit FITS",
+      "calibrated 16-bit FITS (bias/dark/flat)",
+      "JPEG preview",
+      "optional 16-bit TIFF",
+      "optional calibrated FITS to VPhot"
+    ],
+    "form": [
+      "plan subfolder dropdown",
+      "plan selector",
+      "Send to VPhot checkbox",
+      "Auto Logoff checkbox",
+      "Acquire Images button"
+    ]
+  },
+  "system_status_fields": {
+    "Observatory": [
+      "UTC",
+      "LST",
+      "Local",
+      "Date",
+      "Owner",
+      "Weather"
+    ],
+    "Telescope": [
+      "RA",
+      "Dec",
+      "Az",
+      "Alt",
+      "Airmass"
+    ],
+    "Imager": [
+      "Filter",
+      "Binning",
+      "Cooler"
+    ],
+    "Activity": [
+      "Target",
+      "RA",
+      "Dec"
+    ],
+    "other": [
+      "Current Running Script Output",
+      "Preview Last Image",
+      "Auto-Guider Preview",
+      "All Sky Camera"
+    ]
+  },
+  "moon": {
+    "illumination_pct": 97.85,
+    "phase": "Full Moon",
+    "note": "Sorry, this system is not suitable for imaging the moon."
+  },
+  "make_reservation": "You do not have permission to perform this action. Please upgrade your account or buy additional points.",
+  "not_captured": [
+    "Telescope Info (links to off-site support page; skipped)",
+    "Raw HTML (browser save did not work)",
+    "Server-side filter/binning used by start-singleshotplan.asp (only page text)",
+    "Plan-builder form default values and tooltips",
+    "Calibration Frames and Make A Reservation help pages"
+  ],
+  "deep_sky_imaging_instructions": {
+    "url": "https://t8.itelescope.online/index.asp#%5B%5BDeep%20Sky%20Imaging%20Instructions%5D%5D",
+    "workflow": [
+      "Confirm coordinates and visibility with the iTelescope Planning Tool or Telescopius.",
+      "Check framing in Telescopius with the correct telescope selected.",
+      "Fill out the Deep Sky Imaging and Planning form; RA/DEC in most formats, suggested HH:MM:SS and DD:MM:SS (e.g. RA 05:23:25 DEC -10:12:56).",
+      "Use the shortest sub-exposures that give good signal to noise.",
+      "Click Acquire Images Now, or Create Plan For Later to schedule via the Reservation system.",
+      "Watch via System Status or View Desktop (/ac/MenuItems/remote.asp).",
+      "Image ready about 5 minutes after the exposure finishes."
+    ],
+    "tips": [
+      "Shorter subs reduce bad frames from conditions and cosmic rays.",
+      "Stack many shorter subs, e.g. 120 s x 10 = 1200 s master, rather than one 1200 s frame.",
+      "Ideal sub length: sky shot noise just exceeds camera dark current noise.",
+      "Brighter object means shorter subs; darker filter means longer subs; narrowband (Ha, SII, OIII) needs longer than wideband.",
+      "Match sub length to an existing dark frame (Darks 600 s Bin1).",
+      "Dither each sub to reduce noise.",
+      "Use #REPEAT n with 1 exposure per filter instead of Qty n per filter, so a plan cut short still has every filter."
+    ],
+    "notes": [
+      "Telescope refocuses periodically and on temperature change; #FORCESTARTUP + #NOADAPTIVE disables this.",
+      "Max imaging time 600 s, min elevation 23 deg, suggested 45 deg or more."
+    ],
+    "links": {
+      "Planning Tool": "https://go.itelescope.net/Reservation/Planner.aspx",
+      "Telescopius": "https://telescopius.com/",
+      "Calibration data": "https://data.itelescope.net",
+      "My Images": "https://new.data.itelescope.net",
+      "Weather": "https://go.itelescope.net/weather/weather.aspx",
+      "VPhot": "https://www.aavso.org/vphot"
+    },
+    "other_portal_pages_listed": [
+      "Calibration Frames",
+      "Comet Imaging Instructions",
+      "Comet Imaging and Planning",
+      "Geosynchronous Imaging and Planning",
+      "Instruments & Equipment",
+      "MPC 1-Line Format",
+      "Observing Plans",
+      "Planet Imaging Instructions",
+      "Planet Imaging and Planning",
+      "Run Logs"
+    ]
+  }
+}

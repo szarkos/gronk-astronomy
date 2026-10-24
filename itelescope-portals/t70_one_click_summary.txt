@@ -1,0 +1,34 @@
+T70 portal (t70.itelescope.online) - One Click Image workflow and planning notes
+Captured read-only via computerUse; observatory time 2026-10-24 19:09:28 (observatory local). Nothing submitted.
+
+ONE CLICK IMAGE
+- Tables: "Southern Skies" (16 rows), "Other Celestial Objects" (25 rows); total 41.
+- Fixed parameters: filters Red,Green,Blue; Bin 2.
+- Presets used: medium (medium = 3x120 s = 1080 s; short = 5x60 s = 900 s). The page itself shows no preset labels; inferred as on T8.
+- Short preset rows: none.
+- Data quirks: NGC6744 appears twice in Southern Skies. Both duplicate rows kept.
+- Sample Image column blank on every row; precise RA/Dec and submit action not captured.
+
+LIMITS / HEADER
+- Status: . Min elevation 0 deg, max exposure 300 s.
+- Filters: Luminance, Red, Green, Blue, Ha, OIII, SII.
+- OTA card: 
+
+PLAN BUILDER
+- Exposure rows:  default, filters , binning .
+- Advanced directives: #REPEAT.
+- Actions:  (not clicked).
+
+OTHER PAGES
+- Moon: 97.97% Full, Alt 15.80, set 10/25/2026 2:11:39 AM.
+- Run a Saved Plan: 
+- Make a Reservation: You do not have permission to perform this action. Please upgrade your account or buy additional points.
+
+DEEP SKY IMAGING INSTRUCTIONS
+
+NOT CAPTURED
+- ra_hours_precise / dec_deg_precise (hidden form values not in report)
+- sample_image_path (Sample Image column blank on every row)
+- submit_action (SUBMIT form target not recorded; T8's /ac/Plans/start-singleshotplan.asp not assumed)
+- exposure_preset labels: page shows none; medium (3x120=1080) / short (5x60=900) inferred from table as on T8
+- Raw HTML (transcribed from page text)

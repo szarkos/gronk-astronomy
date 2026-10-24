@@ -1,0 +1,35 @@
+T8 portal (t8.itelescope.online) - One Click Image workflow and planning notes
+Captured 2026-10-24 ~3:15 PM PDT (observatory time 2026-10-25 09:14, Siding Spring). Read-only; nothing submitted.
+
+ONE CLICK IMAGE
+- Page lists "Tonight's Finest Objects - Southern Skies" (26 rows) and "Other Celestial Objects" (10 rows), all >=45 deg elevation at render time. The list is generated for the current night, so Az/El change with time.
+- Columns: Designation, Sample Image, Common Name, RA (hrs), DEC (deg), Azimuth, Elevation, Brightness (stars), Repeat, Sub-Exposure Time (s), Total Exposure Time (s), Start Exposure (SUBMIT button).
+- Fixed parameters for all one-click jobs: filters Red, Green, Blue; Bin 2.
+- Each SUBMIT posts hidden fields target, common, ra, dec, exposure to /ac/Plans/start-singleshotplan.asp, which starts a single-shot plan immediately.
+- exposure is a preset: "medium" = 3 x 120 s per filter (3 filters -> 1080 s total, which is what the Total column shows); "short" = 5 x 60 s per filter (900 s total), used only for Omega Centauri (the brightest, 3 stars). Everything else is 2 stars / medium.
+- Workflow: click SUBMIT -> watch System Status / View Observatory -> image available ~5 minutes after exposure ends. Data quirks: NGC3132 appears twice (once named, once "None"); M83 appears in both tables.
+
+PLANNING / SCHEDULING ON T8
+- Limits: min elevation 23 deg, max single exposure 600 s; suggested >=45 deg.
+- Filters: Luminance, Red, Green, Blue, Exo, Ha, SII, OIII. Binning 1 or 2.
+- Deep Sky Objects page is a plan builder: targets (RA/Dec J2000 or name lookup), per-target #REPEAT and #DITHER, exposure rows (Qty, Filter, Duration, Binning). Actions: Acquire Images Now, or Create Plan For Later (saved plan file).
+- Advanced directives: #RESUME, #SKIPPREVIEWS, #LARGEPREVIEWS (session billing), #FIRSTLAST, #NORAW, #NOCAL, #TIFF, #PLATESOLVE (session billing), #FORCESTARTUP + #NOADAPTIVE, #VPHOT, #EXPRESS, #DEFOCUS.
+- Billing: Session (lower hourly rate, all telescope time billed) vs Exposure (only camera exposure billed).
+- Run a Saved Plan: pick a plan file from your folders, optional VPhot upload and Auto Logoff, then Acquire Images.
+- Outputs per image: raw 16-bit FITS, calibrated FITS (bias/dark/flat), JPEG preview, optional TIFF, optional VPhot upload. Masters: Bias Bin1, Darks 600 s Bin1 (scaled with bias).
+- Reservations: this test account lacks permission ("upgrade your account or buy additional points"). Header showed the next reservation at 2026-10-25 02:40 PDT (09:40 UTC, 20:40 observatory time).
+- System Status shows observatory clock/weather, mount RA/Dec/Az/Alt/airmass, imager filter/binning/cooler, current activity and running script output. All n/a at capture (closed, daytime).
+- Moon page: "this system is not suitable for imaging the moon."
+
+NOT CAPTURED
+- Raw HTML (browser save didn't work); data was transcribed from the page.
+- Telescope Info page (links off to the support site, skipped per T8-only rule).
+- Exact server-side behavior of start-singleshotplan.asp beyond the page text.
+
+DEEP SKY IMAGING INSTRUCTIONS (planning guide page)
+- Workflow: check coordinates and visibility in the iTelescope Planning Tool or Telescopius, then check framing in Telescopius with T8 selected, then fill in the Deep Sky Imaging and Planning form (RA/DEC as HH:MM:SS / DD:MM:SS, e.g. RA 05:23:25 DEC -10:12:56), then Acquire Images Now, or Create Plan For Later and schedule it with a reservation. Watch it on System Status or View Desktop; data is ready about 5 min after the exposure ends.
+- Exposure advice: use the shortest subs that give good signal to noise and stack them (e.g. 10 x 120 s rather than 1 x 1200 s). Brighter targets and wideband filters take shorter subs; narrowband (Ha, SII, OIII) takes longer. Match sub length to the existing dark masters (600 s, Bin1). Dither between subs.
+- #REPEAT: with "4 x L, R, G, B" and no #REPEAT, the scope does all 4 of one filter before moving on, so a plan cut short at 3/4 has no Blue. With #REPEAT 4 and 1 exposure per filter, it cycles L, R, G, B four times, so a cut-short plan still has every filter.
+- Focus: the scope refocuses periodically and when the temperature changes; #FORCESTARTUP + #NOADAPTIVE focuses once at the start and then never again.
+- The plan-builder page (Deep Sky Imaging and Planning) matches what I captured earlier: 4 exposure rows (Use, Qty, Filter, Duration, Binning 1/2), #REPEAT/#DITHER per target, Session vs Exposure billing, and the advanced directives.
+- Other guide pages exist on the portal but weren't opened: Calibration Frames, Comet/Planet/Geosynchronous Imaging, Observing Plans, MPC 1-Line Format, Instruments & Equipment.

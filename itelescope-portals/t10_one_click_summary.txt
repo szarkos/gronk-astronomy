@@ -1,0 +1,51 @@
+T10 portal (t10.itelescope.online) - One Click Image workflow and planning notes
+Captured read-only via computerUse; observatory time 2026-10-25 09:36:52 (observatory local). Nothing submitted.
+
+ONE CLICK IMAGE
+- Tables: "Southern Skies" (25 rows), "Other Celestial Objects" (10 rows); total 35.
+- Fixed parameters: filters Red,Green,Blue; Bin 2.
+- Presets used: medium, short (medium = 3x120 s = 1080 s; short = 5x60 s = 900 s). The page itself shows no preset labels; inferred as on T8.
+- Short preset rows: NGC5139.
+- Data quirks: NGC3132 appears twice in Southern Skies; M83 appears in both tables. Both duplicate rows kept.
+- Sample Image column blank on every row; precise RA/Dec and submit action not captured.
+
+LIMITS / HEADER
+- Status: Closed: Day Time. Min elevation 10 deg, max exposure 1800 s.
+- Filters: Red, Green, Blue, Luminance, Ha, OIII, SII.
+- OTA card: Telescope T10 Tak TOA130 fl 1000mm f7.7, Paramount ME, SBIG STX-16803, Lodestar SX2 guider with QHY Mini guidescope. LRGB, Ha, OIII, SII
+
+CONFLICTS
+- min_elevation: portal 10 deg vs Telescope Info Approx 30°
+- focal_length: portal 1000 mm (welcome card, native) vs Telescope Info 762 mm (with reducer)
+- mount: portal Paramount ME vs Telescope Info Paramount GTS (summary line; optics section says Paramount ME)
+
+PLAN BUILDER
+- Exposure rows: 4 default, filters Red, Green, Blue, Luminance, Ha, OIII, SII, binning 1/2.
+- Advanced directives: #RESUME, #SKIPPREVIEWS, #LARGEPREVIEWS, #FIRSTLAST, #NORAW, #NOCAL, #TIFF, #PLATESOLVE, #FORCESTARTUP + #NOADAPTIVE, #VPHOT, #EXPRESS, #DEFOCUS.
+- Actions: ACQUIRE IMAGES NOW, CREATE PLAN FOR LATER (not clicked).
+
+OTHER PAGES
+- Moon: Illumination 97.90%, Phase Full Moon, Alt -53.82, Azm 240.16, RA 00:47:08, Dec 9.67, "Moon Not Visible. Moon Rise: 10/25/2026, 12:28:00 AM". Form RA (hrs), DEC (deg), Filter, Duration (seconds), Qty, 10 rows blank; "Filter and exposure times have been preset for optimal imaging of the moon." Billing Session; "Telescope Minimum Use Policy of 0 minutes applies." Advanced: #SKIPPREVIEWS, #LARGEPREVIEWS, #FIRSTLAST, RAW/#NORAW/#NOCAL/#TIFF, #FORCESTARTUP + #NOADAPTIVE. Button ACQUIRE IMAGES NOW (not clicked).
+- Run a Saved Plan: repeats 1800 s max / 10° min / 45° suggestion and Bias/Dark master note; lists outputs. Controls: "Select the folder containing the Observing Plan to run (if needed)" dropdown "[select subfolder]"; "Select the Observing Plan to run" dropdown (empty); checkboxes "Send my Images to the VPhot Server (requires AAVSO membership)", "Enable Session Based Billing. If unchecked, Exposure Based Billing will be enabled.", "Auto Logoff."; "Acquire Images" button (not clicked).
+- Make a Reservation: You do not have permission to perform this action. Please upgrade your account or buy additional points.
+
+DEEP SKY IMAGING INSTRUCTIONS
+- use iTelescope Planning Tool or Telescopius to confirm coordinates/visibility
+- check framing in Telescopius with correct telescope (else object too small/large)
+- fill Deep Sky Objects form, RA/Dec most formats, suggested H:M:S and D:M:S (e.g. RA 05:23:25, DEC -10:12:56)
+- set subs to shortest time giving max S/N
+- Bias (Bin 1 and 2) and 1800 s darks (Bin 1 and 2) provided as masters, dark scaled with bias
+- click Acquire images now or Create plan for later (Reservation system)
+- watch via System Status or View Desktop
+- images ready ~5 min after exposure.
+
+NOT CAPTURED
+- ra_hours_precise / dec_deg_precise (hidden form values not in report)
+- sample_image_path (Sample Image column blank on every row)
+- submit_action (SUBMIT form target not recorded; T8's /ac/Plans/start-singleshotplan.asp not assumed)
+- exposure_preset labels: page shows none; medium (3x120=1080) / short (5x60=900) inferred from table as on T8
+- Plan-builder field defaults and numeric ranges
+- Filter dropdowns not opened separately (options from page text)
+- Comet/NEO and Planet guide pages
+- Next reservation (portal shows '-')
+- Raw HTML (transcribed from page text)

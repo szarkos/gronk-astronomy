@@ -1,0 +1,178 @@
+{
+  "telescope": "T68",
+  "portal": "https://t68.itelescope.online/index.asp",
+  "captured": "obs time 2026-10-24 17:06:53 (observatory local); read-only computerUse transcription",
+  "capture_notes": "",
+  "header": {
+    "title": "",
+    "status": "",
+    "min_elevation_deg": 15,
+    "max_exposure_s": 240,
+    "filters": [
+      "Color"
+    ],
+    "next_reservation": {
+      "Local": "",
+      "UTC": "",
+      "Obs": "",
+      "ETA": ""
+    },
+    "banner": "",
+    "banner_image_text": "",
+    "ota_card": ""
+  },
+  "one_click_image": {
+    "instructions": [],
+    "filters": [
+      "Color"
+    ],
+    "binning": 2,
+    "notes": [
+      "objects listed are at least 45 degrees above the horizon; beginners start with brightest targets.",
+      "- Billing: none on One Click page.",
+      "- Note: every row shows 3 x 120 s with Total 360 (page value; 3x120 would be 360).",
+      "### Northern Skies\n| Designation | Common Name | RA | Dec | Az | El | Bright | Repeat | Sub | Total |\n|---|---|---|---|---|---|---|---|---|---|\n| NGC6823 | None | 19.",
+      "72 | 23.",
+      "3 | 111.",
+      "537 | 61.",
+      "102 | ★★ | 3 | 120 | 360 |\n\n### Other Celestial Objects\n| Designation | Common Name | RA | Dec | Az | El | Bright | Repeat | Sub | Total |\n|---|---|---|---|---|---|---|---|---|---|\n| M10 | None | 16.",
+      "952 | -4.",
+      "1 | 197.",
+      "914 | 46.",
+      "649 | ★★ | 3 | 120 | 360 |\n| M12 | None | 16.",
+      "787 | -1.",
+      "95 | 202.",
+      "288 | 48.",
+      "046 | ★★ | 3 | 120 | 360 |\n| M13 | None | 16.",
+      "695 | 36.",
+      "467 | 269.",
+      "244 | 77.",
+      "135 | ★★ | 3 | 120 | 360 |\n| M14 | None | 17.",
+      "627 | -3.",
+      "25 | 183.",
+      "189 | 48.",
+      "966 | ★★ | 3 | 120 | 360 |\n| M27 | Dumbbell Nebula | 19.",
+      "993 | 22.",
+      "717 | 108.",
+      "094 | 57.",
+      "708 | ★★ | 3 | 120 | 360 |\n| M29 | None | 20.",
+      "398 | 38.",
+      "533 | 76.",
+      "098 | 59.",
+      "18 | ★★ | 3 | 120 | 360 |\n| M39 | None | 21.",
+      "537 | 48.",
+      "433 | 56.",
+      "398 | 48.",
+      "341 | ★★ | 3 | 120 | 360 |\n| M56 | None | 19.",
+      "277 | 30.",
+      "183 | 105.",
+      "232 | 69.",
+      "815 | ★★ | 3 | 120 | 360 |\n| M57 | Ring Nebula | 18.",
+      "893 | 33.",
+      "033 | 103.",
+      "797 | 75.",
+      "464 | ★★ | 3 | 120 | 360 |\n| M71 | None | 19.",
+      "897 | 18.",
+      "783 | 115.",
+      "317 | 56.",
+      "339 | ★★ | 3 | 120 | 360 |\n| M92 | None | 17.",
+      "285 | 43.",
+      "133 | 316.",
+      "763 | 82.",
+      "303 | ★★ | 3 | 120 | 360 |\n| M101 | None | 14.",
+      "053 | 54.",
+      "35 | 312.",
+      "526 | 49.",
+      "209 | ★★ | 3 | 120 | 360 |.",
+      ""
+    ],
+    "billing": "",
+    "columns": "",
+    "submit_form": {
+      "action": "",
+      "exposure_presets": {
+        "medium": "3 x 120 s per filter, total 1080 s over R,G,B",
+        "short": "5 x 60 s per filter, total 900 s over R,G,B"
+      },
+      "preset_note": "Page shows no preset labels; presets inferred from Repeat/Sub/Total columns (same mapping as T8)."
+    },
+    "tables": {
+      "Northern Skies": 1,
+      "Other Celestial Objects": 12
+    },
+    "data_quirks": []
+  },
+  "deep_sky_plan_builder": {
+    "title": "Deep Sky Objects (plan builder)",
+    "fields": [
+      "Fields: Plan Filename; Target (placeholder M16) with LOOKUP RA & DEC; RA 18:18:48 / DEC -13:47:00 placeholders (J2000); VIEW OBJECT FRAMING.",
+      "Minimum target elevation above horizon: 15°. Max. exposure: 240 seconds.",
+      "Directives: #REPEAT (default 5), #DITHER."
+    ],
+    "limits": {
+      "min_elevation_deg": 15,
+      "max_exposure_s": 240
+    },
+    "targets_section": "",
+    "target_options": [
+      "#REPEAT n",
+      "#DITHER"
+    ],
+    "exposure_rows": {
+      "columns": [
+        "Use",
+        "Qty",
+        "Filter",
+        "Duration (s)",
+        "Binning"
+      ],
+      "filters": [],
+      "binning": [],
+      "default_rows": "",
+      "defaults": "",
+      "ranges": ""
+    },
+    "billing": {
+      "Session": "",
+      "Exposure": ""
+    },
+    "advanced_directives": {
+      "#REPEAT": "default 5"
+    },
+    "actions": [],
+    "url": "https://t68.itelescope.online/index.asp#Deep%20Sky%20Imaging%20and%20Planning"
+  },
+  "telescope_info": {
+    "source": "",
+    "lines": [
+      "Info article \"iTelescope - T68 - One Shot Color - Utah\" (articles/245471, modified 3 Dec 2024): Utah Desert Remote Observatory, Beryl Junction, MPC U94; 37.7378 N, -113.6975; 1570 m; UTC-7.",
+      "Telescope: 11\" (280 mm) F2.2 RASA + CMOS. OTA Celestron RASA 11\" 280mm, aperture 279 mm, focal length 620 mm, f/2.2, mount Paramount ME II, guiding via mount model.",
+      "Camera ZWO ASI071 MC, 4.78 um, 1.6\"/px, 4994x3284, FOV 2.2 x 1.46 deg, -10C, PA 276.6, RGGB. Bin1 only. No mechanical shutter.",
+      "Min elevation: 15° all azimuths, 17° for azimuth 60-120°. Recommended/limit max exposure 240 s.",
+      "Moon: 97.97% Full; \"Sorry, this system is not suitable for imaging the moon.\""
+    ]
+  },
+  "conflicts": [],
+  "run_saved_plan": "",
+  "system_status": "",
+  "moon": {
+    "illumination_pct": "",
+    "phase": "",
+    "detail": "97.97% Full; \"Sorry, this system is not suitable for imaging the moon.\""
+  },
+  "make_reservation": "",
+  "not_captured": [
+    "ra_hours_precise / dec_deg_precise (hidden form values not in report)",
+    "sample_image_path (Sample Image column blank on every row)",
+    "submit_action (SUBMIT form target not recorded; T8's /ac/Plans/start-singleshotplan.asp not assumed)",
+    "exposure_preset labels: page shows none; medium (3x120=1080) / short (5x60=900) inferred from table as on T8",
+    "Raw HTML (transcribed from page text)",
+    "Preset for non-standard rows: NGC6823, M10, M12, M13, M14, M27, M29, M39, M56, M57, M71, M92, M101"
+  ],
+  "deep_sky_imaging_instructions": {
+    "url": "https://t68.itelescope.online/index.asp#%5B%5BDeep%20Sky%20Imaging%20Instructions%5D%5D",
+    "workflow": [],
+    "tips": [],
+    "notes": []
+  }
+}

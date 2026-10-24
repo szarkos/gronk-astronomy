@@ -1,0 +1,44 @@
+T21 portal (t21.itelescope.online) - One Click Image workflow and planning notes
+Captured read-only via computerUse; observatory time 2026-10-24 16:43:36 (observatory local). Nothing submitted.
+
+ONE CLICK IMAGE
+- Tables: "Northern Skies" (1 rows), "Other Celestial Objects" (12 rows); total 13.
+- Fixed parameters: filters Red,Green,Blue; Bin 2.
+- Presets used:  (medium = 3x120 s = 1080 s; short = 5x60 s = 900 s). The page itself shows no preset labels; inferred as on T8.
+- Short preset rows: none.
+- Data quirks: none. Both duplicate rows kept.
+- Sample Image column blank on every row; precise RA/Dec and submit action not captured.
+
+LIMITS / HEADER
+- Status: Closed: Day Time. Min elevation 15 deg, max exposure 600 s.
+- Filters: Luminance, Red, Green, Blue, Ha, SII, OIII, U, B, V, R, I.
+- OTA card: 
+
+PLAN BUILDER
+- Exposure rows:  default, filters Luminance, Red, Green, Blue, Ha, SII, OIII, U, B, V, R, I, binning .
+- Advanced directives: #RESUME, #LARGEPREVIEWS, #PLATESOLVE, #VPHOT, #EXPRESS, #DEFOCUS.
+- Actions:  (not clicked).
+
+OTHER PAGES
+- Moon: 
+- Run a Saved Plan: repeats 600 s / 15° / 45°, calibration and outputs. Controls: folder dropdown "[select subfolder]"; plan list (empty); checkboxes "Send my Images to the VPhot Server (requires AAVSO membership).", "Auto Logoff."; Acquire Images button (not clicked).
+- Make a Reservation: You do not have permission to perform this action. Please upgrade your account or buy additional points.
+
+DEEP SKY IMAGING INSTRUCTIONS
+- Planning Tool or Telescopius for coordinates/visibility
+- check framing in Telescopius with correct telescope
+- fill Deep Sky Objects form, suggested H:M:S / D:M:S (RA 05:23:25 DEC -10:12:56)
+- shortest sub-exposure for max S/N
+- master calibration: Bias Bin 1 & 2, Darks 900 s Bin 1 & 2 (dark scaled with bias)
+- Acquire images now or Create plan for later (Reservation)
+- watch via System Status or View Desktop
+- download ~5 min after.
+
+NOT CAPTURED
+- ra_hours_precise / dec_deg_precise (hidden form values not in report)
+- sample_image_path (Sample Image column blank on every row)
+- submit_action (SUBMIT form target not recorded; T8's /ac/Plans/start-singleshotplan.asp not assumed)
+- exposure_preset labels: page shows none; medium (3x120=1080) / short (5x60=900) inferred from table as on T8
+- Comet/NEO and Planet guide pages
+- Raw HTML (transcribed from page text)
+- Preset for non-standard rows: NGC6823, M10, M12, M13, M14, M27, M29, M51, M56, M57, M71, M92, M101
