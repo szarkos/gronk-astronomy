@@ -1,0 +1,76 @@
+{
+ "_request": {
+  "method": "GET",
+  "url": "https://api.telescopius.com/v2.2/solar-system/times",
+  "params": {
+   "lat": 37.7378,
+   "lon": -113.6975,
+   "timezone": "America/Denver",
+   "datetime": "2026-10-24"
+  },
+  "status": 200,
+  "auth": "Authorization: Key [REDACTED]",
+  "fetched_at": "2026-10-24T15:47:26-0700"
+ },
+ "response": {
+  "sun": {
+   "rise": "07:52",
+   "transit": "13:19",
+   "set": "18:45",
+   "twilights": {
+    "noon": "13:19",
+    "sunset": "18:45",
+    "civil_sunset": "19:12",
+    "nautical_sunset": "19:43",
+    "astronomical_sunset": "20:13",
+    "astronomical_sunrise": "06:24",
+    "nautical_sunrise": "06:55",
+    "civil_sunrise": "07:25",
+    "sunrise": "07:52",
+    "midnight": "01:19",
+    "darkest_sunset": "20:13",
+    "darkest_sunrise": "06:24"
+   }
+  },
+  "moon": {
+   "rise": "17:45",
+   "transit": "00:26",
+   "set": "07:19"
+  },
+  "mercury": {
+   "rise": "09:32",
+   "transit": "14:31",
+   "set": "19:25"
+  },
+  "venus": {
+   "rise": "07:52",
+   "transit": "13:04",
+   "set": "18:10"
+  },
+  "mars": {
+   "rise": "01:30",
+   "transit": "08:30",
+   "set": "15:32"
+  },
+  "jupiter": {
+   "rise": "02:13",
+   "transit": "09:01",
+   "set": "15:53"
+  },
+  "saturn": {
+   "rise": "17:53",
+   "transit": "23:59",
+   "set": "06:04"
+  },
+  "uranus": {
+   "rise": "20:19",
+   "transit": "03:30",
+   "set": "10:41"
+  },
+  "neptune": {
+   "rise": "17:29",
+   "transit": "23:29",
+   "set": "05:30"
+  }
+ }
+}

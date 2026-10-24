@@ -1,0 +1,2891 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "Telescopius RESTful API",
+  "version": "2.2",
+  "description": "<p>Request example: <tt>curl -H \"Authorization: Key YOUR_API_KEY\" https://api.telescopius.com/v2.2/quote-of-the-day</tt></p><p>Response example: <tt>{ \"text\": \"You aren't in the Universe, you are the Universe.\", \"author\": \"Eckhart Tolle\" }</tt></p><p>Latest API version is 2.2</p><p>If you need new endpoints or more than 2 API keys, please contact us explaining your use case to see what we can do.</p><p>Unofficial JavaScript SDK: <a href=\"https://www.npmjs.com/package/telescopius-api\" rel=\"external noopener\" target=\"_blank\">https://www.npmjs.com/package/telescopius-api</a></p>",
+  "termsOfService": "https://telescopius.com/terms-and-conditions#api",
+  "contact": {
+   "url": "https://telescopius.com/contact",
+   "name": "Contact Form"
+  },
+  "license": {
+   "name": "Commercial use not allowed unless you have prior written authorization."
+  }
+ },
+ "servers": [
+  {
+   "url": "https://api.telescopius.com/v2.2",
+   "description": "This server."
+  }
+ ],
+ "paths": {
+  "/solar-system/times": {
+   "get": {
+    "tags": [
+     "Targets"
+    ],
+    "summary": "Get time information for major solar system bodies",
+    "description": "Get time information for major solar system bodies, given a location, date and search parameters.",
+    "parameters": [
+     {
+      "$ref": "#/components/parameters/lat"
+     },
+     {
+      "$ref": "#/components/parameters/lon"
+     },
+     {
+      "$ref": "#/components/parameters/timezone"
+     },
+     {
+      "$ref": "#/components/parameters/datetime"
+     },
+     {
+      "$ref": "#/components/parameters/partner_observatory"
+     },
+     {
+      "$ref": "#/components/parameters/partner_telescope"
+     },
+     {
+      "$ref": "#/components/parameters/time_format"
+     },
+     {
+      "$ref": "#/components/parameters/atmospheric_refraction"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "$ref": "#/components/responses/200"
+     },
+     "400": {
+      "$ref": "#/components/responses/400",
+      "description": "Bad Request"
+     },
+     "401": {
+      "$ref": "#/components/responses/401",
+      "description": "Unauthorized"
+     },
+     "429": {
+      "$ref": "#/components/responses/429",
+      "description": "Too Many Requests"
+     }
+    }
+   }
+  },
+  "/targets/search": {
+   "get": {
+    "tags": [
+     "Targets"
+    ],
+    "summary": "Advanced search to find targets in the sky",
+    "description": "Searches targets given a location, date and search parameters.",
+    "parameters": [
+     {
+      "$ref": "#/components/parameters/sp_types"
+     },
+     {
+      "$ref": "#/components/parameters/lat"
+     },
+     {
+      "$ref": "#/components/parameters/lon"
+     },
+     {
+      "$ref": "#/components/parameters/timezone"
+     },
+     {
+      "$ref": "#/components/parameters/datetime"
+     },
+     {
+      "$ref": "#/components/parameters/time_format"
+     },
+     {
+      "$ref": "#/components/parameters/atmospheric_refraction"
+     },
+     {
+      "$ref": "#/components/parameters/partner_observatory"
+     },
+     {
+      "$ref": "#/components/parameters/partner_telescope"
+     },
+     {
+      "$ref": "#/components/parameters/compute_current"
+     },
+     {
+      "$ref": "#/components/parameters/ephemeris"
+     },
+     {
+      "$ref": "#/components/parameters/ephemeris_hour"
+     },
+     {
+      "$ref": "#/components/parameters/sp_name"
+     },
+     {
+      "$ref": "#/components/parameters/sp_name_exact"
+     },
+     {
+      "$ref": "#/components/parameters/sp_con"
+     },
+     {
+      "$ref": "#/components/parameters/sp_hour_max"
+     },
+     {
+      "$ref": "#/components/parameters/sp_hour_min"
+     },
+     {
+      "$ref": "#/components/parameters/sp_min_alt"
+     },
+     {
+      "$ref": "#/components/parameters/sp_min_alt_minutes"
+     },
+     {
+      "$ref": "#/components/parameters/sp_az_quadrants"
+     },
+     {
+      "$ref": "#/components/parameters/sp_moon_dist_min"
+     },
+     {
+      "$ref": "#/components/parameters/sp_moon_dist_max"
+     },
+     {
+      "$ref": "#/components/parameters/sp_dec_max"
+     },
+     {
+      "$ref": "#/components/parameters/sp_dec_min"
+     },
+     {
+      "$ref": "#/components/parameters/sp_ra_max"
+     },
+     {
+      "$ref": "#/components/parameters/sp_ra_min"
+     },
+     {
+      "$ref": "#/components/parameters/sp_mag_max"
+     },
+     {
+      "$ref": "#/components/parameters/sp_mag_min"
+     },
+     {
+      "$ref": "#/components/parameters/sp_mag_unknown"
+     },
+     {
+      "$ref": "#/components/parameters/sp_order"
+     },
+     {
+      "$ref": "#/components/parameters/sp_order_asc"
+     },
+     {
+      "$ref": "#/components/parameters/sp_results_per_page"
+     },
+     {
+      "$ref": "#/components/parameters/sp_page"
+     },
+     {
+      "$ref": "#/components/parameters/sp_center_ra"
+     },
+     {
+      "$ref": "#/components/parameters/sp_center_dec"
+     },
+     {
+      "$ref": "#/components/parameters/sp_dist_min"
+     },
+     {
+      "$ref": "#/components/parameters/sp_dist_max"
+     },
+     {
+      "$ref": "#/components/parameters/sp_comet_orbit"
+     },
+     {
+      "$ref": "#/components/parameters/sp_cat"
+     },
+     {
+      "$ref": "#/components/parameters/sp_size_unknown"
+     },
+     {
+      "$ref": "#/components/parameters/sp_size_max"
+     },
+     {
+      "$ref": "#/components/parameters/sp_size_min"
+     },
+     {
+      "$ref": "#/components/parameters/sp_subr_unknown"
+     },
+     {
+      "$ref": "#/components/parameters/sp_subr_max"
+     },
+     {
+      "$ref": "#/components/parameters/sp_subr_min"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "The total objects `matched` for this search (regardless of `results_per_page`), and the `objects` found, with their rise/transit/set times and observation at transit",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "matched": {
+           "type": "number",
+           "example": 239
+          },
+          "objects": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "object": {
+              "type": "object",
+              "properties": {
+               "main_id": {
+                "type": "string",
+                "example": "NGC 7000"
+               },
+               "main_name": {
+                "type": "string",
+                "example": "North America Nebula"
+               },
+               "ids": {
+                "type": "array",
+                "example": [
+                 "NGC 7000",
+                 "SH 2-117",
+                 "LBN 373",
+                 "LBN 085.75-01.48",
+                 "CTB 100",
+                 "C 20"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "names": {
+                "type": "array",
+                "example": [
+                 "North America Nebula"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "family": {
+                "type": "string",
+                "example": "deep_sky_object"
+               },
+               "types": {
+                "type": "array",
+                "example": [
+                 "eneb",
+                 "dineb",
+                 "neb",
+                 "ism",
+                 "deep_sky_object",
+                 "stcl",
+                 "h2r",
+                 "radsrc"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "url": {
+                "type": "string",
+                "example": "/deep-sky-objects/ngc-7000/north-america-nebula/emission-nebula/star-cluster/h2-region"
+               },
+               "main_image_url": {
+                "type": "string",
+                "example": "https://telescopius.com/img/dsos/2e47df4eab4eaf8016df8ec14949337a_fullhd.webp"
+               },
+               "thumbnail_url": {
+                "type": "string",
+                "example": "https://telescopius.com/img/dsos/2e47df4eab4eaf8016df8ec14949337a_thumbnail.webp"
+               },
+               "alt_ids": {
+                "type": "array",
+                "example": [
+                 "CALDWELL 20"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "ra": {
+                "type": "number",
+                "example": 20.979722
+               },
+               "dec": {
+                "type": "number",
+                "example": 44.33
+               },
+               "con": {
+                "type": "string",
+                "example": "CYG"
+               },
+               "con_name": {
+                "type": "string",
+                "example": "Cygnus"
+               },
+               "visual_mag": {
+                "type": "number",
+                "example": 5
+               },
+               "photo_mag": {
+                "type": "number",
+                "example": 4
+               },
+               "major_axis": {
+                "type": "number",
+                "example": 7200
+               },
+               "minor_axis": {
+                "type": "number",
+                "example": 6000
+               },
+               "subr": {
+                "type": "number",
+                "example": 23.8
+               }
+              }
+             },
+             "tonight_times": {
+              "type": "object",
+              "properties": {
+               "rise": {
+                "type": "string",
+                "example": "16:33"
+               },
+               "transit": {
+                "type": "string",
+                "example": "22:26"
+               },
+               "set": {
+                "type": "string",
+                "example": "04:31"
+               }
+              }
+             },
+             "transit_observation": {
+              "type": "object",
+              "properties": {
+               "ra": {
+                "type": "number",
+                "example": 20.979722
+               },
+               "dec": {
+                "type": "number",
+                "example": 44.33
+               },
+               "dist_au": {
+                "type": "number",
+                "example": 0
+               },
+               "alt": {
+                "type": "number",
+                "example": 45.67
+               },
+               "az": {
+                "type": "number",
+                "example": 0.52
+               },
+               "mag": {
+                "type": "number",
+                "example": 5
+               },
+               "con": {
+                "type": "string",
+                "example": "CYG"
+               }
+              }
+             },
+             "tonight_visibility": {
+              "type": "object",
+              "properties": {
+               "max_altitude": {
+                "type": "number",
+                "example": 46
+               },
+               "max_altitude_hour": {
+                "type": "string",
+                "example": "22:26"
+               },
+               "windows": {
+                "type": "array",
+                "items": {
+                 "type": "object",
+                 "properties": {
+                  "start": {
+                   "type": "string",
+                   "example": "21:16"
+                  },
+                  "end": {
+                   "type": "string",
+                   "example": "23:36"
+                  },
+                  "imaging_time_hours": {
+                   "type": "number",
+                   "example": 2.33
+                  },
+                  "moon_illumination_percent": {
+                   "type": "number",
+                   "example": 0.14
+                  },
+                  "moon_distance_deg": {
+                   "type": "number",
+                   "example": 168.4
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       },
+       "application/xml": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "matched": {
+           "type": "number",
+           "example": 239
+          },
+          "objects": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "object": {
+              "type": "object",
+              "properties": {
+               "main_id": {
+                "type": "string",
+                "example": "NGC 7000"
+               },
+               "main_name": {
+                "type": "string",
+                "example": "North America Nebula"
+               },
+               "ids": {
+                "type": "array",
+                "example": [
+                 "NGC 7000",
+                 "SH 2-117",
+                 "LBN 373",
+                 "LBN 085.75-01.48",
+                 "CTB 100",
+                 "C 20"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "names": {
+                "type": "array",
+                "example": [
+                 "North America Nebula"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "family": {
+                "type": "string",
+                "example": "deep_sky_object"
+               },
+               "types": {
+                "type": "array",
+                "example": [
+                 "eneb",
+                 "dineb",
+                 "neb",
+                 "ism",
+                 "deep_sky_object",
+                 "stcl",
+                 "h2r",
+                 "radsrc"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "url": {
+                "type": "string",
+                "example": "/deep-sky-objects/ngc-7000/north-america-nebula/emission-nebula/star-cluster/h2-region"
+               },
+               "main_image_url": {
+                "type": "string",
+                "example": "https://telescopius.com/img/dsos/2e47df4eab4eaf8016df8ec14949337a_fullhd.webp"
+               },
+               "thumbnail_url": {
+                "type": "string",
+                "example": "https://telescopius.com/img/dsos/2e47df4eab4eaf8016df8ec14949337a_thumbnail.webp"
+               },
+               "alt_ids": {
+                "type": "array",
+                "example": [
+                 "CALDWELL 20"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "ra": {
+                "type": "number",
+                "example": 20.979722
+               },
+               "dec": {
+                "type": "number",
+                "example": 44.33
+               },
+               "con": {
+                "type": "string",
+                "example": "CYG"
+               },
+               "con_name": {
+                "type": "string",
+                "example": "Cygnus"
+               },
+               "visual_mag": {
+                "type": "number",
+                "example": 5
+               },
+               "photo_mag": {
+                "type": "number",
+                "example": 4
+               },
+               "major_axis": {
+                "type": "number",
+                "example": 7200
+               },
+               "minor_axis": {
+                "type": "number",
+                "example": 6000
+               },
+               "subr": {
+                "type": "number",
+                "example": 23.8
+               }
+              }
+             },
+             "tonight_times": {
+              "type": "object",
+              "properties": {
+               "rise": {
+                "type": "string",
+                "example": "16:33"
+               },
+               "transit": {
+                "type": "string",
+                "example": "22:26"
+               },
+               "set": {
+                "type": "string",
+                "example": "04:31"
+               }
+              }
+             },
+             "transit_observation": {
+              "type": "object",
+              "properties": {
+               "ra": {
+                "type": "number",
+                "example": 20.979722
+               },
+               "dec": {
+                "type": "number",
+                "example": 44.33
+               },
+               "dist_au": {
+                "type": "number",
+                "example": 0
+               },
+               "alt": {
+                "type": "number",
+                "example": 45.67
+               },
+               "az": {
+                "type": "number",
+                "example": 0.52
+               },
+               "mag": {
+                "type": "number",
+                "example": 5
+               },
+               "con": {
+                "type": "string",
+                "example": "CYG"
+               }
+              }
+             },
+             "tonight_visibility": {
+              "type": "object",
+              "properties": {
+               "max_altitude": {
+                "type": "number",
+                "example": 46
+               },
+               "max_altitude_hour": {
+                "type": "string",
+                "example": "22:26"
+               },
+               "windows": {
+                "type": "array",
+                "items": {
+                 "type": "object",
+                 "properties": {
+                  "start": {
+                   "type": "string",
+                   "example": "21:16"
+                  },
+                  "end": {
+                   "type": "string",
+                   "example": "23:36"
+                  },
+                  "imaging_time_hours": {
+                   "type": "number",
+                   "example": 2.33
+                  },
+                  "moon_illumination_percent": {
+                   "type": "number",
+                   "example": 0.14
+                  },
+                  "moon_distance_deg": {
+                   "type": "number",
+                   "example": 168.4
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/400",
+      "description": "Bad Request"
+     },
+     "401": {
+      "$ref": "#/components/responses/401",
+      "description": "Unauthorized"
+     },
+     "429": {
+      "$ref": "#/components/responses/429",
+      "description": "Too Many Requests"
+     }
+    }
+   }
+  },
+  "/targets/highlights": {
+   "get": {
+    "tags": [
+     "Targets"
+    ],
+    "summary": "Simplified targets search, to get the most popular targets best seen around this time of the year",
+    "description": "Get a list of popular targets for the given location and date, for which this is the best time of the year to catch them high in the sky around midnight. In other words, near opposition and with the longest time up in the night sky for you to observe or take the most subs.",
+    "parameters": [
+     {
+      "$ref": "#/components/parameters/sp_types"
+     },
+     {
+      "$ref": "#/components/parameters/lat"
+     },
+     {
+      "$ref": "#/components/parameters/lon"
+     },
+     {
+      "$ref": "#/components/parameters/timezone"
+     },
+     {
+      "$ref": "#/components/parameters/datetime"
+     },
+     {
+      "$ref": "#/components/parameters/time_format"
+     },
+     {
+      "$ref": "#/components/parameters/atmospheric_refraction"
+     },
+     {
+      "$ref": "#/components/parameters/partner_observatory"
+     },
+     {
+      "$ref": "#/components/parameters/partner_telescope"
+     },
+     {
+      "$ref": "#/components/parameters/compute_current"
+     },
+     {
+      "$ref": "#/components/parameters/ephemeris"
+     },
+     {
+      "$ref": "#/components/parameters/ephemeris_hour"
+     },
+     {
+      "$ref": "#/components/parameters/sp_min_alt"
+     },
+     {
+      "$ref": "#/components/parameters/sp_min_alt_minutes"
+     },
+     {
+      "$ref": "#/components/parameters/sp_moon_dist_min"
+     },
+     {
+      "$ref": "#/components/parameters/sp_moon_dist_max"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "The total objects `matched` for this search (regardless of `results_per_page`), and the `objects` found, with their rise/transit/set times and observation at transit",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "matched": {
+           "type": "number",
+           "example": 239
+          },
+          "objects": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "object": {
+              "type": "object",
+              "properties": {
+               "main_id": {
+                "type": "string",
+                "example": "NGC 7000"
+               },
+               "main_name": {
+                "type": "string",
+                "example": "North America Nebula"
+               },
+               "ids": {
+                "type": "array",
+                "example": [
+                 "NGC 7000",
+                 "SH 2-117",
+                 "LBN 373",
+                 "LBN 085.75-01.48",
+                 "CTB 100",
+                 "C 20"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "names": {
+                "type": "array",
+                "example": [
+                 "North America Nebula"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "family": {
+                "type": "string",
+                "example": "deep_sky_object"
+               },
+               "types": {
+                "type": "array",
+                "example": [
+                 "eneb",
+                 "dineb",
+                 "neb",
+                 "ism",
+                 "deep_sky_object",
+                 "stcl",
+                 "h2r",
+                 "radsrc"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "url": {
+                "type": "string",
+                "example": "/deep-sky-objects/ngc-7000/north-america-nebula/emission-nebula/star-cluster/h2-region"
+               },
+               "main_image_url": {
+                "type": "string",
+                "example": "https://telescopius.com/img/dsos/2e47df4eab4eaf8016df8ec14949337a_fullhd.webp"
+               },
+               "thumbnail_url": {
+                "type": "string",
+                "example": "https://telescopius.com/img/dsos/2e47df4eab4eaf8016df8ec14949337a_thumbnail.webp"
+               },
+               "alt_ids": {
+                "type": "array",
+                "example": [
+                 "CALDWELL 20"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "ra": {
+                "type": "number",
+                "example": 20.979722
+               },
+               "dec": {
+                "type": "number",
+                "example": 44.33
+               },
+               "con": {
+                "type": "string",
+                "example": "CYG"
+               },
+               "con_name": {
+                "type": "string",
+                "example": "Cygnus"
+               },
+               "visual_mag": {
+                "type": "number",
+                "example": 5
+               },
+               "photo_mag": {
+                "type": "number",
+                "example": 4
+               },
+               "major_axis": {
+                "type": "number",
+                "example": 7200
+               },
+               "minor_axis": {
+                "type": "number",
+                "example": 6000
+               },
+               "subr": {
+                "type": "number",
+                "example": 23.8
+               }
+              }
+             },
+             "tonight_times": {
+              "type": "object",
+              "properties": {
+               "rise": {
+                "type": "string",
+                "example": "16:33"
+               },
+               "transit": {
+                "type": "string",
+                "example": "22:26"
+               },
+               "set": {
+                "type": "string",
+                "example": "04:31"
+               }
+              }
+             },
+             "transit_observation": {
+              "type": "object",
+              "properties": {
+               "ra": {
+                "type": "number",
+                "example": 20.979722
+               },
+               "dec": {
+                "type": "number",
+                "example": 44.33
+               },
+               "dist_au": {
+                "type": "number",
+                "example": 0
+               },
+               "alt": {
+                "type": "number",
+                "example": 45.67
+               },
+               "az": {
+                "type": "number",
+                "example": 0.52
+               },
+               "mag": {
+                "type": "number",
+                "example": 5
+               },
+               "con": {
+                "type": "string",
+                "example": "CYG"
+               }
+              }
+             },
+             "tonight_visibility": {
+              "type": "object",
+              "properties": {
+               "max_altitude": {
+                "type": "number",
+                "example": 46
+               },
+               "max_altitude_hour": {
+                "type": "string",
+                "example": "22:26"
+               },
+               "windows": {
+                "type": "array",
+                "items": {
+                 "type": "object",
+                 "properties": {
+                  "start": {
+                   "type": "string",
+                   "example": "2026-05-19 15:23:38"
+                  },
+                  "end": {
+                   "type": "string",
+                   "example": "2026-05-19 23:41:10"
+                  },
+                  "imaging_time_hours": {
+                   "type": "number",
+                   "example": 8.3
+                  },
+                  "moon_illumination": {
+                   "type": "number",
+                   "example": 0.14
+                  },
+                  "moon_distance_deg": {
+                   "type": "number",
+                   "example": 168.4
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       },
+       "application/xml": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "matched": {
+           "type": "number",
+           "example": 239
+          },
+          "objects": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "object": {
+              "type": "object",
+              "properties": {
+               "main_id": {
+                "type": "string",
+                "example": "NGC 7000"
+               },
+               "main_name": {
+                "type": "string",
+                "example": "North America Nebula"
+               },
+               "ids": {
+                "type": "array",
+                "example": [
+                 "NGC 7000",
+                 "SH 2-117",
+                 "LBN 373",
+                 "LBN 085.75-01.48",
+                 "CTB 100",
+                 "C 20"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "names": {
+                "type": "array",
+                "example": [
+                 "North America Nebula"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "family": {
+                "type": "string",
+                "example": "deep_sky_object"
+               },
+               "types": {
+                "type": "array",
+                "example": [
+                 "eneb",
+                 "dineb",
+                 "neb",
+                 "ism",
+                 "deep_sky_object",
+                 "stcl",
+                 "h2r",
+                 "radsrc"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "url": {
+                "type": "string",
+                "example": "/deep-sky-objects/ngc-7000/north-america-nebula/emission-nebula/star-cluster/h2-region"
+               },
+               "main_image_url": {
+                "type": "string",
+                "example": "https://telescopius.com/img/dsos/2e47df4eab4eaf8016df8ec14949337a_fullhd.webp"
+               },
+               "thumbnail_url": {
+                "type": "string",
+                "example": "https://telescopius.com/img/dsos/2e47df4eab4eaf8016df8ec14949337a_thumbnail.webp"
+               },
+               "alt_ids": {
+                "type": "array",
+                "example": [
+                 "CALDWELL 20"
+                ],
+                "items": {
+                 "type": "string"
+                }
+               },
+               "ra": {
+                "type": "number",
+                "example": 20.979722
+               },
+               "dec": {
+                "type": "number",
+                "example": 44.33
+               },
+               "con": {
+                "type": "string",
+                "example": "CYG"
+               },
+               "con_name": {
+                "type": "string",
+                "example": "Cygnus"
+               },
+               "visual_mag": {
+                "type": "number",
+                "example": 5
+               },
+               "photo_mag": {
+                "type": "number",
+                "example": 4
+               },
+               "major_axis": {
+                "type": "number",
+                "example": 7200
+               },
+               "minor_axis": {
+                "type": "number",
+                "example": 6000
+               },
+               "subr": {
+                "type": "number",
+                "example": 23.8
+               }
+              }
+             },
+             "tonight_times": {
+              "type": "object",
+              "properties": {
+               "rise": {
+                "type": "string",
+                "example": "16:33"
+               },
+               "transit": {
+                "type": "string",
+                "example": "22:26"
+               },
+               "set": {
+                "type": "string",
+                "example": "04:31"
+               }
+              }
+             },
+             "transit_observation": {
+              "type": "object",
+              "properties": {
+               "ra": {
+                "type": "number",
+                "example": 20.979722
+               },
+               "dec": {
+                "type": "number",
+                "example": 44.33
+               },
+               "dist_au": {
+                "type": "number",
+                "example": 0
+               },
+               "alt": {
+                "type": "number",
+                "example": 45.67
+               },
+               "az": {
+                "type": "number",
+                "example": 0.52
+               },
+               "mag": {
+                "type": "number",
+                "example": 5
+               },
+               "con": {
+                "type": "string",
+                "example": "CYG"
+               }
+              }
+             },
+             "tonight_visibility": {
+              "type": "object",
+              "properties": {
+               "max_altitude": {
+                "type": "number",
+                "example": 46
+               },
+               "max_altitude_hour": {
+                "type": "string",
+                "example": "22:26"
+               },
+               "windows": {
+                "type": "array",
+                "items": {
+                 "type": "object",
+                 "properties": {
+                  "start": {
+                   "type": "string",
+                   "example": "2026-05-19 15:23:38"
+                  },
+                  "end": {
+                   "type": "string",
+                   "example": "2026-05-19 23:41:10"
+                  },
+                  "imaging_time_hours": {
+                   "type": "number",
+                   "example": 8.3
+                  },
+                  "moon_illumination": {
+                   "type": "number",
+                   "example": 0.14
+                  },
+                  "moon_distance_deg": {
+                   "type": "number",
+                   "example": 168.4
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/400",
+      "description": "Bad Request"
+     },
+     "401": {
+      "$ref": "#/components/responses/401",
+      "description": "Unauthorized"
+     },
+     "429": {
+      "$ref": "#/components/responses/429",
+      "description": "Too Many Requests"
+     }
+    }
+   }
+  },
+  "/targets/lists": {
+   "get": {
+    "tags": [
+     "Targets"
+    ],
+    "summary": "Fetch all my lists",
+    "description": "Fetch basic information about all lists for current user.",
+    "responses": {
+     "200": {
+      "description": "An array of simple objects, one per target list.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "type": "object",
+          "properties": {
+           "id": {
+            "type": "string",
+            "example": "12345678"
+           },
+           "name": {
+            "type": "string",
+            "example": "List Name"
+           }
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       },
+       "application/xml": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "type": "object",
+          "properties": {
+           "id": {
+            "type": "string",
+            "example": "12345678"
+           },
+           "name": {
+            "type": "string",
+            "example": "List Name"
+           }
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/400",
+      "description": "Bad Request"
+     },
+     "401": {
+      "$ref": "#/components/responses/401",
+      "description": "Unauthorized"
+     },
+     "429": {
+      "$ref": "#/components/responses/429",
+      "description": "Too Many Requests"
+     }
+    }
+   }
+  },
+  "/targets/lists/{id}": {
+   "get": {
+    "tags": [
+     "Targets"
+    ],
+    "summary": "Fetch a target list",
+    "description": "Returns a target list with all its targets. If order is set to rise, transit, set or next opposition, the location of the list will be used instead of the querystring parameters.",
+    "parameters": [
+     {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "$ref": "#/components/parameters/lat"
+     },
+     {
+      "$ref": "#/components/parameters/lon"
+     },
+     {
+      "$ref": "#/components/parameters/timezone"
+     },
+     {
+      "$ref": "#/components/parameters/datetime"
+     },
+     {
+      "$ref": "#/components/parameters/partner_observatory"
+     },
+     {
+      "$ref": "#/components/parameters/partner_telescope"
+     },
+     {
+      "$ref": "#/components/parameters/atmospheric_refraction"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK"
+     },
+     "400": {
+      "$ref": "#/components/responses/400",
+      "description": "Bad Request"
+     },
+     "401": {
+      "$ref": "#/components/responses/401",
+      "description": "Unauthorized"
+     },
+     "429": {
+      "$ref": "#/components/responses/429",
+      "description": "Too Many Requests"
+     }
+    }
+   }
+  },
+  "/target-lists": {
+   "get": {
+    "tags": [
+     "Target Lists"
+    ],
+    "summary": "Fetch all target lists",
+    "description": "Returns all target lists belonging to the authenticated user.",
+    "responses": {
+     "200": {
+      "description": "An object containing an array of target lists.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "lists": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "id": {
+              "type": "string",
+              "example": "12345678"
+             },
+             "name": {
+              "type": "string",
+              "example": "List Name"
+             },
+             "location_id": {},
+             "created": {
+              "type": "string",
+              "example": "2026-09-15T12:00:00.000Z"
+             },
+             "targets_count": {
+              "type": "number",
+              "example": 5
+             },
+             "url": {
+              "type": "string",
+              "example": "https://telescopius.com/observing-lists/12345678"
+             }
+            }
+           }
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       },
+       "application/xml": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "lists": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "id": {
+              "type": "string",
+              "example": "12345678"
+             },
+             "name": {
+              "type": "string",
+              "example": "List Name"
+             },
+             "location_id": {},
+             "created": {
+              "type": "string",
+              "example": "2026-09-15T12:00:00.000Z"
+             },
+             "targets_count": {
+              "type": "number",
+              "example": 5
+             },
+             "url": {
+              "type": "string",
+              "example": "https://telescopius.com/observing-lists/12345678"
+             }
+            }
+           }
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       }
+      }
+     },
+     "401": {
+      "description": "Unauthorized",
+      "$ref": "#/components/responses/401"
+     },
+     "403": {
+      "description": "Forbidden"
+     },
+     "422": {
+      "description": "Unprocessable Entity"
+     }
+    }
+   }
+  },
+  "/target-lists/{id}": {
+   "get": {
+    "tags": [
+     "Target Lists"
+    ],
+    "summary": "Fetch a target list by ID",
+    "description": "Returns a target list with its targets for the authenticated user.",
+    "parameters": [
+     {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Target list ID"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "The target list object including its targets.",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "id": {
+           "type": "string",
+           "example": "12345678"
+          },
+          "user_id": {
+           "type": "number",
+           "example": 1
+          },
+          "name": {
+           "type": "string",
+           "example": "List Name"
+          },
+          "location_id": {},
+          "created": {
+           "type": "string",
+           "example": "2026-09-15T12:00:00.000Z"
+          },
+          "url": {
+           "type": "string",
+           "example": "/observing-lists/12345678"
+          },
+          "targets": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "id": {
+              "type": "number",
+              "example": 101
+             },
+             "object_id": {
+              "type": "string",
+              "example": "M 42"
+             },
+             "name": {
+              "type": "string",
+              "example": "Orion Nebula"
+             },
+             "ra_hr": {
+              "type": "number",
+              "example": 5.58
+             },
+             "dec": {
+              "type": "number",
+              "example": -5.39
+             },
+             "ra_hr_jnow": {
+              "type": "number",
+              "example": 5.6
+             },
+             "dec_jnow": {
+              "type": "number",
+              "example": -5.38
+             },
+             "size_deg": {
+              "type": "number",
+              "example": 1.2
+             },
+             "fov_width_deg": {
+              "type": "number",
+              "example": 2
+             },
+             "fov_height_deg": {
+              "type": "number",
+              "example": 1.5
+             },
+             "visual_mag": {
+              "type": "number",
+              "example": 4
+             },
+             "constellation_id": {
+              "type": "string",
+              "example": "ORI"
+             },
+             "position_angle_east": {
+              "type": "number",
+              "example": 45
+             },
+             "position_angle_east_jnow": {
+              "type": "number",
+              "example": 45.2
+             },
+             "framing_data": {},
+             "panel_number": {
+              "type": "number",
+              "example": 1
+             },
+             "notes": {
+              "type": "string",
+              "example": "Great target"
+             },
+             "thumbnail_url": {
+              "type": "string",
+              "example": "https://telescopius.com/observing-lists/custom-target/101/0/thumbnail.jpg"
+             }
+            }
+           }
+          },
+          "targets_count": {
+           "type": "number",
+           "example": 1
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       },
+       "application/xml": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "id": {
+           "type": "string",
+           "example": "12345678"
+          },
+          "user_id": {
+           "type": "number",
+           "example": 1
+          },
+          "name": {
+           "type": "string",
+           "example": "List Name"
+          },
+          "location_id": {},
+          "created": {
+           "type": "string",
+           "example": "2026-09-15T12:00:00.000Z"
+          },
+          "url": {
+           "type": "string",
+           "example": "/observing-lists/12345678"
+          },
+          "targets": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "id": {
+              "type": "number",
+              "example": 101
+             },
+             "object_id": {
+              "type": "string",
+              "example": "M 42"
+             },
+             "name": {
+              "type": "string",
+              "example": "Orion Nebula"
+             },
+             "ra_hr": {
+              "type": "number",
+              "example": 5.58
+             },
+             "dec": {
+              "type": "number",
+              "example": -5.39
+             },
+             "ra_hr_jnow": {
+              "type": "number",
+              "example": 5.6
+             },
+             "dec_jnow": {
+              "type": "number",
+              "example": -5.38
+             },
+             "size_deg": {
+              "type": "number",
+              "example": 1.2
+             },
+             "fov_width_deg": {
+              "type": "number",
+              "example": 2
+             },
+             "fov_height_deg": {
+              "type": "number",
+              "example": 1.5
+             },
+             "visual_mag": {
+              "type": "number",
+              "example": 4
+             },
+             "constellation_id": {
+              "type": "string",
+              "example": "ORI"
+             },
+             "position_angle_east": {
+              "type": "number",
+              "example": 45
+             },
+             "position_angle_east_jnow": {
+              "type": "number",
+              "example": 45.2
+             },
+             "framing_data": {},
+             "panel_number": {
+              "type": "number",
+              "example": 1
+             },
+             "notes": {
+              "type": "string",
+              "example": "Great target"
+             },
+             "thumbnail_url": {
+              "type": "string",
+              "example": "https://telescopius.com/observing-lists/custom-target/101/0/thumbnail.jpg"
+             }
+            }
+           }
+          },
+          "targets_count": {
+           "type": "number",
+           "example": 1
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/400",
+      "description": "Bad Request"
+     },
+     "401": {
+      "description": "Unauthorized",
+      "$ref": "#/components/responses/401"
+     },
+     "403": {
+      "description": "Forbidden"
+     },
+     "404": {
+      "description": "Target list not found"
+     },
+     "422": {
+      "description": "Unprocessable Entity"
+     }
+    }
+   }
+  },
+  "/events/calendar": {
+   "get": {
+    "tags": [
+     "Events"
+    ],
+    "summary": "Get astronomical calendar events",
+    "description": "Retrieves astronomical events (eclipses, moon phases, meteor showers, planetary oppositions, conjunctions, equinoxes, solstices, and occultations) for a specified date range (7 to 365 days, default 30 days) or a specific year/month.",
+    "parameters": [
+     {
+      "name": "days",
+      "in": "query",
+      "description": "Number of days to return events for (min: 7, max: 365, default: 30)",
+      "default": 30,
+      "schema": {
+       "type": "integer"
+      }
+     },
+     {
+      "name": "date",
+      "in": "query",
+      "description": "Start date in ISO format or YYYY-MM-DD (defaults to current date)",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "year",
+      "in": "query",
+      "description": "Calendar year (1800-2200)",
+      "schema": {
+       "type": "integer"
+      }
+     },
+     {
+      "name": "month",
+      "in": "query",
+      "description": "Calendar month (1-12)",
+      "schema": {
+       "type": "integer"
+      }
+     },
+     {
+      "name": "lat",
+      "in": "query",
+      "description": "Observer latitude in degrees (-90 to 90)",
+      "schema": {
+       "type": "number"
+      }
+     },
+     {
+      "name": "lon",
+      "in": "query",
+      "description": "Observer longitude in degrees (-180 to 180)",
+      "schema": {
+       "type": "number"
+      }
+     },
+     {
+      "name": "elevation",
+      "in": "query",
+      "description": "Observer elevation in meters above sea level",
+      "schema": {
+       "type": "number"
+      }
+     },
+     {
+      "name": "timezone",
+      "in": "query",
+      "description": "Observer IANA timezone (e.g. UTC, America/New_York)",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "max_conjunction_deg",
+      "in": "query",
+      "description": "Maximum angular separation in degrees for conjunctions (default: 5.0)",
+      "default": 5,
+      "schema": {
+       "type": "number"
+      }
+     },
+     {
+      "name": "conjunction_frame",
+      "in": "query",
+      "description": "Conjunction frame: geocentric or topocentric (default: geocentric)",
+      "enum": [
+       "geocentric",
+       "topocentric"
+      ],
+      "default": "geocentric",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "categories",
+      "in": "query",
+      "description": "Comma-separated categories to filter (moon,planets,meteor_showers,eclipses,conjunctions,seasons)",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Astronomical calendar events successfully retrieved",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "days": {
+           "type": "number",
+           "example": 30
+          },
+          "total_events": {
+           "type": "number",
+           "example": 15
+          },
+          "events": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "type": {
+              "type": "string",
+              "example": "TWO_OBJECTS_CONJUNCTION"
+             },
+             "name": {
+              "type": "string",
+              "example": "Conjunction of Moon and Jupiter (1.8\u00b0)"
+             },
+             "timestamp": {
+              "type": "number",
+              "example": 1729000000
+             },
+             "datetime": {
+              "type": "string",
+              "example": "2026-10-15T12:00:00.000Z"
+             },
+             "deg": {
+              "type": "number",
+              "example": 1.8
+             },
+             "objects": {
+              "type": "array",
+              "example": [
+               "Moon",
+               "Jupiter"
+              ],
+              "items": {
+               "type": "string"
+              }
+             }
+            }
+           }
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       },
+       "application/xml": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "days": {
+           "type": "number",
+           "example": 30
+          },
+          "total_events": {
+           "type": "number",
+           "example": 15
+          },
+          "events": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "type": {
+              "type": "string",
+              "example": "TWO_OBJECTS_CONJUNCTION"
+             },
+             "name": {
+              "type": "string",
+              "example": "Conjunction of Moon and Jupiter (1.8\u00b0)"
+             },
+             "timestamp": {
+              "type": "number",
+              "example": 1729000000
+             },
+             "datetime": {
+              "type": "string",
+              "example": "2026-10-15T12:00:00.000Z"
+             },
+             "deg": {
+              "type": "number",
+              "example": 1.8
+             },
+             "objects": {
+              "type": "array",
+              "example": [
+               "Moon",
+               "Jupiter"
+              ],
+              "items": {
+               "type": "string"
+              }
+             }
+            }
+           }
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/events/highlights": {
+   "get": {
+    "tags": [
+     "Events"
+    ],
+    "summary": "Get upcoming astronomical highlights",
+    "description": "Retrieves prioritized astronomical highlights for the next 30 days (up to 10 events by default, sorted chronologically), prioritized by astronomical significance (eclipses, Saturn ring crossings, occultations, meteor showers, close conjunctions, alignments, and equinoxes/solstices).",
+    "parameters": [
+     {
+      "name": "year",
+      "in": "query",
+      "description": "Calendar year for monthly highlights (e.g. 2026)",
+      "schema": {
+       "type": "integer"
+      }
+     },
+     {
+      "name": "month",
+      "in": "query",
+      "description": "Calendar month (1-12) for monthly highlights",
+      "schema": {
+       "type": "integer"
+      }
+     },
+     {
+      "name": "date",
+      "in": "query",
+      "description": "Start date in YYYY-MM-DD or ISO format for date-range highlights",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "days",
+      "in": "query",
+      "description": "Number of days ahead to search (min: 1, max: 365, default: 30)",
+      "default": 30,
+      "schema": {
+       "type": "integer"
+      }
+     },
+     {
+      "name": "limit",
+      "in": "query",
+      "description": "Maximum number of highlight events to return (min: 1, max: 50, default: 10)",
+      "default": 10,
+      "schema": {
+       "type": "integer"
+      }
+     },
+     {
+      "name": "lat",
+      "in": "query",
+      "description": "Observer latitude in degrees (-90 to 90)",
+      "schema": {
+       "type": "number"
+      }
+     },
+     {
+      "name": "lon",
+      "in": "query",
+      "description": "Observer longitude in degrees (-180 to 180)",
+      "schema": {
+       "type": "number"
+      }
+     },
+     {
+      "name": "elevation",
+      "in": "query",
+      "description": "Observer elevation in meters above sea level",
+      "schema": {
+       "type": "number"
+      }
+     },
+     {
+      "name": "timezone",
+      "in": "query",
+      "description": "Observer IANA timezone (e.g. UTC, America/New_York)",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "max_conjunction_deg",
+      "in": "query",
+      "description": "Maximum angular separation in degrees for conjunctions (default: 3.0)",
+      "default": 3,
+      "schema": {
+       "type": "number"
+      }
+     },
+     {
+      "name": "conjunction_frame",
+      "in": "query",
+      "description": "Conjunction calculation frame: geocentric or topocentric (default: geocentric)",
+      "enum": [
+       "geocentric",
+       "topocentric"
+      ],
+      "default": "geocentric",
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Upcoming highlights successfully retrieved",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "days_ahead": {
+           "type": "number",
+           "example": 30
+          },
+          "count": {
+           "type": "number",
+           "example": 7
+          },
+          "events": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "type": {
+              "type": "string",
+              "example": "TWO_OBJECTS_CONJUNCTION"
+             },
+             "name": {
+              "type": "string",
+              "example": "Conjunction of Moon and Saturn (2.4\u00b0)"
+             },
+             "timestamp": {
+              "type": "number",
+              "example": 1729000000
+             },
+             "datetime": {
+              "type": "string",
+              "example": "2026-10-15T12:00:00.000Z"
+             },
+             "deg": {
+              "type": "number",
+              "example": 2.4
+             },
+             "objects": {
+              "type": "array",
+              "example": [
+               "Moon",
+               "Saturn"
+              ],
+              "items": {
+               "type": "string"
+              }
+             }
+            }
+           }
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       },
+       "application/xml": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "days_ahead": {
+           "type": "number",
+           "example": 30
+          },
+          "count": {
+           "type": "number",
+           "example": 7
+          },
+          "events": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "type": {
+              "type": "string",
+              "example": "TWO_OBJECTS_CONJUNCTION"
+             },
+             "name": {
+              "type": "string",
+              "example": "Conjunction of Moon and Saturn (2.4\u00b0)"
+             },
+             "timestamp": {
+              "type": "number",
+              "example": 1729000000
+             },
+             "datetime": {
+              "type": "string",
+              "example": "2026-10-15T12:00:00.000Z"
+             },
+             "deg": {
+              "type": "number",
+              "example": 2.4
+             },
+             "objects": {
+              "type": "array",
+              "example": [
+               "Moon",
+               "Saturn"
+              ],
+              "items": {
+               "type": "string"
+              }
+             }
+            }
+           }
+          }
+         },
+         "xml": {
+          "name": "main"
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/weather/forecast": {
+   "get": {
+    "tags": [
+     "Weather"
+    ],
+    "summary": "Get weather forecast for a location",
+    "description": "The darkest sunset/sunrise are used to determine the length of the day and night. Weather information is updated every 4-6 hours so there's no need to make requests more than once every few hours. Please keep a local cache when possible.",
+    "parameters": [
+     {
+      "name": "lat",
+      "description": "Latitude [-90, 90]",
+      "required": true,
+      "in": "query",
+      "schema": {
+       "type": "number"
+      }
+     },
+     {
+      "name": "lon",
+      "description": "Longitude [-180, 180]",
+      "required": true,
+      "in": "query",
+      "schema": {
+       "type": "number"
+      }
+     },
+     {
+      "name": "timezone",
+      "description": "Timezone (e.g. Europe/Paris)",
+      "required": true,
+      "in": "query",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "temp_unit",
+      "description": "Temperature unit (c, f)",
+      "default": "c",
+      "in": "query",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "speed_unit",
+      "description": "Speed unit (kmh, mph)",
+      "default": "kmh",
+      "in": "query",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "precip_unit",
+      "description": "Precipitation unit (mm, in)",
+      "default": "mm",
+      "in": "query",
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "include_hourly",
+      "description": "Include hourly data in the response",
+      "default": false,
+      "in": "query",
+      "schema": {
+       "type": "boolean"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Weather forecast for a location"
+     },
+     "400": {
+      "$ref": "#/components/responses/400",
+      "description": "Bad Request"
+     },
+     "401": {
+      "$ref": "#/components/responses/401",
+      "description": "Unauthorized"
+     },
+     "429": {
+      "$ref": "#/components/responses/429",
+      "description": "Too Many Requests"
+     }
+    }
+   }
+  },
+  "/equipment/user": {
+   "get": {
+    "tags": [
+     "Equipment"
+    ],
+    "summary": "Get all equipment for your user",
+    "description": "Get all equipment for your user.",
+    "parameters": [
+     {
+      "name": "username",
+      "in": "query",
+      "description": "Username of the user. If empty, it will use your username, identified by your API key.",
+      "required": false,
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    }
+   }
+  },
+  "/equipment/user/telescopes": {},
+  "/equipment/user/telescopes/{id}": {},
+  "/equipment/user/cameras": {},
+  "/equipment/user/cameras/{id}": {},
+  "/equipment/user/filters": {},
+  "/equipment/user/filters/{id}": {},
+  "/equipment/user/accessories": {},
+  "/equipment/user/accessories/{id}": {},
+  "/equipment/user/software": {},
+  "/equipment/user/software/{id}": {},
+  "/equipment/user/mounts": {},
+  "/equipment/user/mounts/{id}": {},
+  "/equipment/user/eyepieces": {},
+  "/equipment/user/eyepieces/{id}": {},
+  "/equipment/user/binoculars": {},
+  "/equipment/user/binoculars/{id}": {},
+  "/equipment/user/lenscams": {},
+  "/equipment/user/lenscams/{id}": {},
+  "/quote-of-the-day": {
+   "get": {
+    "tags": [
+     "Misc"
+    ],
+    "summary": "Get quote of the day",
+    "description": "Get quote of the day",
+    "responses": {
+     "200": {
+      "description": "OK",
+      "$ref": "#/components/responses/200"
+     },
+     "400": {
+      "$ref": "#/components/responses/400",
+      "description": "Bad Request"
+     },
+     "401": {
+      "$ref": "#/components/responses/401",
+      "description": "Unauthorized"
+     },
+     "429": {
+      "$ref": "#/components/responses/429",
+      "description": "Too Many Requests"
+     }
+    }
+   }
+  },
+  "/news/global": {
+   "get": {
+    "tags": [
+     "Misc"
+    ],
+    "summary": "Get the latest news from different astronomy feeds",
+    "description": "Get the latest news from different astronomy feeds",
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    }
+   }
+  },
+  "/mcp": {
+   "post": {
+    "tags": [
+     "MCP"
+    ],
+    "summary": "Model Context Protocol (MCP) Streamable HTTP endpoint",
+    "description": "Stateless Model Context Protocol (MCP) Streamable HTTP endpoint for AI assistants and autonomous agents. Supports JSON-RPC 2.0 requests for initialization, tool discovery, and tool execution (e.g. celestial calculations, target search, visibility, weather, user equipment, and locations). Requires an API key via Authorization header (Key <api_key> or Bearer <api_key>).",
+    "parameters": [
+     {
+      "name": "body",
+      "in": "body",
+      "description": "JSON-RPC 2.0 request payload (e.g. initialize, tools/list, or tools/call)",
+      "required": true,
+      "schema": {
+       "type": "object",
+       "properties": {
+        "jsonrpc": {
+         "type": "string",
+         "example": "2.0"
+        },
+        "method": {
+         "type": "string",
+         "example": "tools/call"
+        },
+        "params": {
+         "type": "object",
+         "properties": {
+          "name": {
+           "type": "string",
+           "example": "get_target_details"
+          },
+          "arguments": {
+           "type": "object",
+           "properties": {
+            "object_id": {
+             "type": "string",
+             "example": "M42"
+            }
+           }
+          }
+         }
+        },
+        "id": {
+         "type": "number",
+         "example": 1
+        }
+       }
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful JSON-RPC 2.0 response."
+     },
+     "400": {
+      "description": "Bad request - Invalid JSON-RPC request or batch request."
+     },
+     "401": {
+      "description": "Unauthorized",
+      "$ref": "#/components/responses/401"
+     },
+     "422": {
+      "description": "Unprocessable Entity"
+     },
+     "429": {
+      "$ref": "#/components/responses/429",
+      "description": "Too Many Requests"
+     },
+     "500": {
+      "description": "Internal Server Error"
+     }
+    },
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "type": "object",
+        "properties": {
+         "id": {
+          "example": "any"
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "components": {
+  "securitySchemes": {
+   "APIKeyHeader": {
+    "type": "apiKey",
+    "in": "header",
+    "name": "Authorization",
+    "description": "The header Authorization value should be: \"Key YOUR_API_KEY\""
+   }
+  },
+  "responses": {
+   "200": {
+    "description": "Successful request."
+   },
+   "400": {
+    "description": "Bad request - Usually due to invalid parameters."
+   },
+   "401": {
+    "description": "Unauthorized - API key is missing, invalid or disabled."
+   },
+   "429": {
+    "description": "Too Many Requests - API key has gone over the monthly requests limit."
+   }
+  },
+  "parameters": {
+   "lat": {
+    "name": "lat",
+    "in": "query",
+    "description": "Latitude. [-90, 90]. Default: auto-detect from IP address.",
+    "schema": {
+     "type": "number"
+    }
+   },
+   "lon": {
+    "name": "lon",
+    "in": "query",
+    "description": "Longitude. [-180, 180]. Default: auto-detect from IP address.",
+    "schema": {
+     "type": "number"
+    }
+   },
+   "timezone": {
+    "name": "timezone",
+    "in": "query",
+    "description": "IANA Timezone. Default: auto-detect from IP address.",
+    "schema": {
+     "type": "string",
+     "default": "UTC"
+    }
+   },
+   "datetime": {
+    "name": "datetime",
+    "in": "query",
+    "description": "Date or datetime. \"YYYY-MM-DD\", \"YYYY-MM-DD HH:mm:ss\", or ISO 8601 string. Default: null (present time)",
+    "schema": {
+     "type": "string",
+     "default": null
+    }
+   },
+   "timestamp": {
+    "name": "timestamp",
+    "in": "query",
+    "description": "Unix timestamp in seconds or milliseconds. Default: null (present time)",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "time_format": {
+    "name": "time_format",
+    "in": "query",
+    "description": "How to report times. Possible values: \"24hr\" or \"ampm\"",
+    "schema": {
+     "type": "string",
+     "default": "24hr"
+    }
+   },
+   "atmospheric_refraction": {
+    "name": "atmospheric_refraction",
+    "in": "query",
+    "description": "Whether to apply atmospheric refraction to rise/set times, altitudes, and ephemeris calculations. Default: true.",
+    "schema": {
+     "type": "boolean",
+     "default": true
+    }
+   },
+   "partner_observatory": {
+    "name": "partner_observatory",
+    "in": "query",
+    "description": "The MPC code of the observatory registered on Telescopius. If provided, parameters lat, lon and timezone are ignored and used this observatory data instead.",
+    "schema": {
+     "type": "string"
+    }
+   },
+   "partner_telescope": {
+    "name": "partner_telescope",
+    "in": "query",
+    "description": "The code of the telescope registered on Telescopius. Please note, for this parameter to work you'll need to pass partner_observatory too.",
+    "schema": {
+     "type": "string"
+    }
+   },
+   "compute_current": {
+    "name": "compute_current",
+    "in": "query",
+    "description": "Whether to return an observation at datetime of the objects found (1) or not (0)",
+    "schema": {
+     "type": "integer",
+     "default": 0
+    }
+   },
+   "ephemeris": {
+    "name": "ephemeris",
+    "in": "query",
+    "description": "Set to 'daily' or 'yearly' if you want to calculate the ephemeris for the given day or the upcoming 12 months respectively. WARNING: only works when `name` and `name_exact` are set (in other words, when searching for a single target).",
+    "schema": {
+     "type": "string",
+     "default": null
+    }
+   },
+   "ephemeris_hour": {
+    "name": "ephemeris_hour",
+    "in": "query",
+    "description": "A decimal hour that will be used when computing the yearly ephemeris.",
+    "schema": {
+     "type": "float",
+     "default": null
+    }
+   },
+   "sp_types": {
+    "name": "types",
+    "in": "query",
+    "required": true,
+    "description": "Object types. You can enter multiple DSO type IDs separated by a comma. Possible values: COMET, ASTEROID, DEEP_SKY_OBJECT, GXY, etc.",
+    "schema": {
+     "type": "string",
+     "example": "GXY"
+    }
+   },
+   "sp_name": {
+    "name": "name",
+    "in": "query",
+    "description": "Find objects by name. This performs a fuzzy search and forces the `order` to be by name match score.",
+    "schema": {
+     "type": "string",
+     "default": null
+    }
+   },
+   "sp_name_exact": {
+    "name": "name_exact",
+    "in": "query",
+    "description": "Whether to filter by exact name match or impartial matches.",
+    "schema": {
+     "type": "boolean",
+     "default": false
+    }
+   },
+   "sp_con": {
+    "name": "con",
+    "in": "query",
+    "description": "Constellations. You can enter multiple values separated by a comma. IAU abbreviations.",
+    "schema": {
+     "type": "string"
+    }
+   },
+   "sp_comet_orbit": {
+    "name": "comet_orbit",
+    "in": "query",
+    "description": "Type of comet orbit. You can enter multiple values separated by a comma. Possible values: PERIODIC, NON_PERIODIC, ASTEROIDAL, INTERSTELLAR",
+    "schema": {
+     "type": "string"
+    }
+   },
+   "sp_hour_min": {
+    "name": "hour_min",
+    "in": "query",
+    "description": "The minimum hour of your observing session. Default: \"sunrise\". Possible values: numbers [0, 24), or the strings \"sunrise\", \"sunset\", \"civil_sunrise\", \"civil_sunset\", \"nautical_sunrise\", \"nautical_sunset\", \"astronomical_sunrise\", \"astronomical_sunset\", \"darkest_sunrise\", \"darkest_sunset\"",
+    "schema": {
+     "oneOf": [
+      {
+       "type": "number"
+      },
+      {
+       "type": "string"
+      }
+     ]
+    },
+    "default": null
+   },
+   "sp_hour_max": {
+    "name": "hour_max",
+    "in": "query",
+    "description": "The maximum hour of your observing session. Default: \"sunrise\". Possible values: numbers [0, 24), or the strings \"sunrise\", \"sunset\", \"civil_sunrise\", \"civil_sunset\", \"nautical_sunrise\", \"nautical_sunset\", \"astronomical_sunrise\", \"astronomical_sunset\", \"darkest_sunrise\", \"darkest_sunset\"",
+    "schema": {
+     "oneOf": [
+      {
+       "type": "number"
+      },
+      {
+       "type": "string"
+      }
+     ]
+    },
+    "default": null
+   },
+   "sp_min_alt": {
+    "name": "min_alt",
+    "in": "query",
+    "description": "The minimum altitude in the sky the objects need to reach to be reported. Possible values: [0-90].",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_min_alt_minutes": {
+    "name": "min_alt_minutes",
+    "in": "query",
+    "description": "The minimum amount of minutes the objects need to spend above `min_alt` to be reported. Min: 1, Max: 1440. Value 0 is invalid.",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_az_quadrants": {
+    "name": "az_quadrants",
+    "in": "query",
+    "description": "Limit AZ quadrants you have in view. Possible values: NE, NW, SW, SE. You can enter multiple values separated by a comma.",
+    "schema": {
+     "type": "string",
+     "default": null
+    }
+   },
+   "sp_moon_dist_min": {
+    "name": "moon_dist_min",
+    "in": "query",
+    "description": "The minimum distance between the Moon and the objects at transit time. You can also pass these special values that will dynamically calculate the distance to the moon using a moon-avoidance Lorentzian depending on the selected date and the type of astrophotography you wan to do: narrowband, ha_s2, o3, lrgb",
+    "schema": {
+     "type": "string",
+     "default": 0
+    }
+   },
+   "sp_moon_dist_max": {
+    "name": "moon_dist_max",
+    "in": "query",
+    "description": "The maximum distance between the Moon and the objects at transit time to be reported.",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_dec_min": {
+    "name": "dec_min",
+    "in": "query",
+    "description": "Minimum Declination at transit time. [-90, 90]",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_dec_max": {
+    "name": "dec_max",
+    "in": "query",
+    "description": "Maximum Declination at transit time. [-90, 90]",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_ra_min": {
+    "name": "ra_min",
+    "in": "query",
+    "description": "Minimum Right Ascension at transit time. [0, 24]",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_ra_max": {
+    "name": "ra_max",
+    "in": "query",
+    "description": "Maximum Right Ascension at transit time. [0, 24]",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_mag_max": {
+    "name": "mag_max",
+    "in": "query",
+    "description": "Maximum apparent magnitude.",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_mag_min": {
+    "name": "mag_min",
+    "in": "query",
+    "description": "Minimum apparent magnitude.",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_mag_unknown": {
+    "name": "mag_unknown",
+    "in": "query",
+    "description": "Wether to return objects with unknown apparent magnitudes or not. Default: 1 (true)",
+    "schema": {
+     "type": "boolean",
+     "default": true
+    }
+   },
+   "sp_order": {
+    "name": "order",
+    "in": "query",
+    "description": "How to sort the results. Possible values: \"name\", \"con\", \"dec\", \"mag\", \"ra\", \"rise\", \"set\", \"transit\", \"size\", \"subr\", \"type\", \"imaging_time\". For DSOs, you may also use \"popularity\" and \"opposition\".",
+    "schema": {
+     "type": "string",
+     "default": "mag"
+    }
+   },
+   "sp_order_asc": {
+    "name": "order_asc",
+    "in": "query",
+    "description": "Whether to use ascending order or not. Default: 1",
+    "schema": {
+     "type": "boolean",
+     "default": true
+    }
+   },
+   "sp_results_per_page": {
+    "name": "results_per_page",
+    "in": "query",
+    "description": "How many results to show per request. Possible values: [1-120]",
+    "schema": {
+     "type": "number",
+     "default": 10
+    }
+   },
+   "sp_page": {
+    "name": "page",
+    "in": "query",
+    "description": "Which page to show for this request. The number of available pages depend on the `matched` result and the `results_per_page`. If you request a page beyond the limit, an empty result set will be returned.",
+    "schema": {
+     "type": "number",
+     "default": 1
+    }
+   },
+   "sp_size_max": {
+    "name": "size_max",
+    "in": "query",
+    "description": "Maximum apparent size.",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_size_min": {
+    "name": "size_min",
+    "in": "query",
+    "description": "Minimum apparent size.",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_size_unknown": {
+    "name": "size_unknown",
+    "in": "query",
+    "description": "Wether to return objects with unknown apparent sizes or not. Default: 1 (true)",
+    "schema": {
+     "type": "boolean",
+     "default": true
+    }
+   },
+   "sp_subr_max": {
+    "name": "subr_max",
+    "in": "query",
+    "description": "Maximum surface brightness.",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_subr_min": {
+    "name": "subr_min",
+    "in": "query",
+    "description": "Minimum surface brightness.",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_subr_unknown": {
+    "name": "subr_unknown",
+    "in": "query",
+    "description": "Wether to return objects with unknown surface brightnesss or not. Default: 1 (true)",
+    "schema": {
+     "type": "boolean",
+     "default": true
+    }
+   },
+   "sp_cat": {
+    "name": "cat",
+    "in": "query",
+    "description": "Catalogs. You can enter multiple catalog acronyms separated by a comma.",
+    "schema": {
+     "type": "string",
+     "example": "M,NGC"
+    }
+   },
+   "sp_center_ra": {
+    "name": "center_ra",
+    "in": "query",
+    "description": "Used together with center_dec and one or both of dist_min and dist_max, this is used to find objects at the given distances from the given center point.",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_center_dec": {
+    "name": "center_dec",
+    "in": "query",
+    "description": "Used together with center_ra and one or both of dist_min and dist_max, this is used to find objects at the given distances from the given center point.",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_dist_min": {
+    "name": "dist_min",
+    "in": "query",
+    "description": "Used together with center_ra and center_dec, used to return objects at least this distance from the given center point. Value in degrees.",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   },
+   "sp_dist_max": {
+    "name": "dist_max",
+    "in": "query",
+    "description": "Used together with center_ra and center_dec, used to return objects at most this distance from the given center point. Value in degrees.",
+    "schema": {
+     "type": "number",
+     "default": null
+    }
+   }
+  }
+ },
+ "security": [
+  {
+   "APIKeyHeader": []
+  }
+ ]
+}

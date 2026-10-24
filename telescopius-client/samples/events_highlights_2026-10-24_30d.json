@@ -1,0 +1,183 @@
+{
+ "_request": {
+  "method": "GET",
+  "url": "https://api.telescopius.com/v2.2/events/highlights",
+  "params": {
+   "date": "2026-10-24",
+   "days": 30,
+   "lat": 37.7378,
+   "lon": -113.6975,
+   "timezone": "America/Denver"
+  },
+  "status": 200,
+  "auth": "Authorization: Key [REDACTED]",
+  "fetched_at": "2026-10-24T15:47:45-0700"
+ },
+ "response": {
+  "date": "2026-10-24",
+  "days": 30,
+  "days_ahead": 30,
+  "count": 10,
+  "events": [
+   {
+    "type": "PLANET_OCCULTATION",
+    "name": "Lunar Occultation of Mars",
+    "objects": [
+     "Moon",
+     "Mars"
+    ],
+    "deg": 1,
+    "timestamp": 1793626747,
+    "datetime": "2026-11-02T13:39:07.810Z",
+    "is_occultation": true,
+    "geographic_regions": "Antarctica",
+    "highlight_tier": 2,
+    "visible_locally": false,
+    "moon_altitude": 58
+   },
+   {
+    "type": "PLANET_OCCULTATION",
+    "name": "Lunar Occultation of Jupiter",
+    "objects": [
+     "Moon",
+     "Jupiter"
+    ],
+    "deg": 0.5,
+    "timestamp": 1793659554,
+    "datetime": "2026-11-02T22:45:54.815Z",
+    "is_occultation": true,
+    "geographic_regions": "Australia & Oceania, Asia",
+    "highlight_tier": 2,
+    "visible_locally": false,
+    "moon_altitude": -21
+   },
+   {
+    "type": "TWO_OBJECTS_CONJUNCTION",
+    "name": "Conjunction of the Moon and Regulus",
+    "objects": [
+     "Moon",
+     "Regulus"
+    ],
+    "deg": 0.8,
+    "timestamp": 1793695349,
+    "datetime": "2026-11-03T08:42:29.318Z",
+    "highlight_tier": 3
+   },
+   {
+    "type": "METEOR_SHOWER",
+    "id": "southern_taurids",
+    "name": "Southern Taurids",
+    "timestamp": 1793872889,
+    "datetime": "2026-11-05T10:01:29.212Z",
+    "year": 2026,
+    "month": 11,
+    "zhr": 5,
+    "radiant": {
+     "ra": 3.47,
+     "dec": 15
+    },
+    "parent_body": "2P/Encke",
+    "active_window": "2026-09-10 to 2026-11-20",
+    "moon_illumination": 15,
+    "moon_phase_name": "Last Quarter",
+    "rating": "EXCELLENT",
+    "highlight_tier": 2
+   },
+   {
+    "type": "PLANET_OCCULTATION",
+    "name": "Lunar Occultation of Venus",
+    "objects": [
+     "Moon",
+     "Venus"
+    ],
+    "deg": 1,
+    "timestamp": 1794048143,
+    "datetime": "2026-11-07T10:42:23.983Z",
+    "is_occultation": true,
+    "geographic_regions": "South America, Antarctica",
+    "highlight_tier": 2,
+    "visible_locally": false,
+    "moon_altitude": -36
+   },
+   {
+    "type": "TWO_OBJECTS_CONJUNCTION",
+    "name": "Conjunction of the Moon and Spica",
+    "objects": [
+     "Moon",
+     "Spica"
+    ],
+    "deg": 2.2,
+    "timestamp": 1794051107,
+    "datetime": "2026-11-07T11:31:47.536Z",
+    "highlight_tier": 3
+   },
+   {
+    "type": "MOON_PHASE",
+    "name": "New Moon",
+    "object": "Moon",
+    "moon_phase": "NEW",
+    "timestamp": 1794207762,
+    "datetime": "2026-11-09T07:02:42.392Z",
+    "distance_km": 397761,
+    "is_supermoon": false,
+    "is_micromoon": false,
+    "is_blue_moon": false,
+    "is_black_moon": false,
+    "traditional_name": "",
+    "highlight_tier": 1
+   },
+   {
+    "type": "TWO_OBJECTS_CONJUNCTION",
+    "name": "Conjunction of Venus and Spica",
+    "objects": [
+     "Venus",
+     "Spica"
+    ],
+    "deg": 1.2,
+    "timestamp": 1794221593,
+    "datetime": "2026-11-09T10:53:13.479Z",
+    "highlight_tier": 3
+   },
+   {
+    "type": "METEOR_SHOWER",
+    "id": "northern_taurids",
+    "name": "Northern Taurids",
+    "timestamp": 1794475034,
+    "datetime": "2026-11-12T09:17:14.511Z",
+    "year": 2026,
+    "month": 11,
+    "zhr": 5,
+    "radiant": {
+     "ra": 3.87,
+     "dec": 22
+    },
+    "parent_body": "2004 TG10",
+    "active_window": "2026-10-20 to 2026-12-10",
+    "moon_illumination": 9,
+    "moon_phase_name": "New Moon",
+    "rating": "EXCELLENT",
+    "highlight_tier": 2
+   },
+   {
+    "type": "METEOR_SHOWER",
+    "id": "leonids",
+    "name": "Leonids",
+    "timestamp": 1794927142,
+    "datetime": "2026-11-17T14:52:22.927Z",
+    "year": 2026,
+    "month": 11,
+    "zhr": 15,
+    "radiant": {
+     "ra": 10.13,
+     "dec": 22
+    },
+    "parent_body": "55P/Tempel-Tuttle",
+    "active_window": "2026-11-06 to 2026-11-30",
+    "moon_illumination": 51,
+    "moon_phase_name": "First Quarter",
+    "rating": "MODERATE",
+    "highlight_tier": 2
+   }
+  ]
+ }
+}

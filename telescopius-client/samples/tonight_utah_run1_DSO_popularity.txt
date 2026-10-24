@@ -1,0 +1,30 @@
+Tonight 2026-10-24 at 37.7378, -113.6975 (America/Denver)  min alt 30 deg  types=DEEP_SKY_OBJECT  mag<=10
+  Sun set 18:45  astro dark 20:13 -> 06:24  (midnight 01:19)  rise 07:52
+  Moon rise 17:45  transit 00:26  set 07:19  illum 98.8% @ midnight, alt 61.2 deg
+  API matched 422 objects; showing 20 (order=popularity, desc)
+
+ # Target                     Type           Con    Mag MaxAlt     @ Transit Window      Img h MoonSep  (API) MoonAlt
+---------------------------------------------------------------------------------------------------------------------
+ 1 VDB 64                     rneb,dineb,neb LEP   10.0     38 05:17   05:17 00:00-06:25  6.42    75.2   75.9    22.6
+ 2 HEN 3-1925                 elst,str,nirsr CYG    9.9     84 20:22   20:22 20:13-04:17  8.07    59.1   59.8    29.7
+ 3 HEN 3-1912                 elst,str,nirsr VUL    9.9     78 19:56   19:56 20:13-03:27  7.23    65.5   65.2    61.2
+ 4 HEN 3-1906                 elst,str,nirsr VUL    9.9     79 19:53   19:53 20:13-03:27  7.23    66.1   65.8    61.2
+ 5 HEN 3-1784                 symst,dms,catb CYG    9.9     88 19:11   19:11 20:13-03:29  7.27    74.8   74.6    61.2
+ 6 HEN 3-1807                 elst,str,nirsr CYG    9.8     88 19:19   19:19 20:13-03:40  7.45    73.2     73    61.2
+ 7 HEN 3-1754                 elst,str,nirsr AQL    9.8     69 18:54   18:54 20:13-01:48  5.58    80.8   80.2    61.2
+ 8 VDB 53                     rneb,dineb,neb ORI    9.5     42 05:01   05:01 23:31-06:25   6.9    70.3     71    25.6
+ 9 HEN 3-1826                 elst,str,nirsr SGE    9.5     71 19:26   19:26 20:13-02:30  6.28    72.8   72.3    61.2
+10 VDB 89                     rneb,dineb,neb CMA    9.5     40 06:22   06:22 00:58-06:25  5.45    89.5   90.6    10.3
+11 HEN 3-1740                 elst,str,nirsr SGE    9.4     70 18:34   18:34 20:13-01:32  5.32    85.2   84.6    61.2
+12 HEN 3-1747                 symst,dms,vars CYG    9.3     82 18:45   18:45 20:13-02:32  6.32    80.9   80.6    61.2
+13 VDB 66                     rneb,dineb,neb MON    9.3     43 05:22   05:22 23:51-06:25  6.57    75.2     76    21.6
+14 HEN 3-1908                 bsg,esg,mst    CYG    9.2     86 19:53   19:53 20:13-04:49  8.58    66.7   66.6    61.2
+15 HEN 3-1759                 elst,str,nirsr CYG    9.2     82 18:57   18:57 20:13-02:45  6.53    78.2   77.9    61.2
+16 HEN 3-1814                 best,msqst,str CYG    9.1     82 19:23   19:23 20:13-03:10  6.95    72.7   72.4    61.2
+17 HEN 3-1919                 elst,str,nirsr CYG    8.8     84 20:08   20:08 20:13-04:07   7.9    63.0   62.8    61.2
+18 HEN 3-1801                 elst,str,pulva VUL    8.7     79 19:16   19:16 20:13-02:50  6.62    74.4     74    61.2
+19 HEN 3-1817                 best,msqst,str VUL    8.3     74 19:24   19:24 20:13-02:38  6.42    73.1   72.6    61.2
+20 WR 139                     str,ebin,binst CYG    8.0     89 19:40   19:40 20:13-04:17  8.07    69.0   68.9    61.2
+
+MoonSep = local astropy separation at the target's transit (or midnight if transit is outside astro dark);
+(API) = Telescopius window moon_distance_deg; MoonAlt = Moon altitude at that same instant.

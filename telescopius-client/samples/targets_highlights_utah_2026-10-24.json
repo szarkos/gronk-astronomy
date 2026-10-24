@@ -1,0 +1,621 @@
+{
+ "_request": {
+  "method": "GET",
+  "url": "https://api.telescopius.com/v2.2/targets/highlights",
+  "params": {
+   "types": "DEEP_SKY_OBJECT",
+   "lat": 37.7378,
+   "lon": -113.6975,
+   "timezone": "America/Denver",
+   "datetime": "2026-10-24",
+   "min_alt": 30
+  },
+  "status": 200,
+  "auth": "Authorization: Key [REDACTED]",
+  "fetched_at": "2026-10-24T15:47:33-0700"
+ },
+ "response": {
+  "matched": 24,
+  "page_results": [
+   {
+    "object": {
+     "main_id": "LDN 1355",
+     "main_name": "LDN 1355",
+     "ids": [
+      "LDN 1355"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "dkneb",
+      "dineb",
+      "neb",
+      "ism",
+      "deep_sky_object"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/ldn-1355/dark-nebula",
+     "main_image_url": "https://telescopius.com/img/dsos/7704f570a231f1e6405a7caf45ccdfda_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/7704f570a231f1e6405a7caf45ccdfda_thumbnail.webp",
+     "alt_ids": [],
+     "ra": 2.878333,
+     "dec": 69.033333,
+     "con": "CAS",
+     "con_name": "Cassiopeia"
+    },
+    "tonight_times": {
+     "rise": "19:15",
+     "transit": "02:13",
+     "set": "09:10"
+    },
+    "transit_observation": {
+     "ra": 2.878333,
+     "dec": 69.033333,
+     "dist_au": 0,
+     "alt": 58.71,
+     "az": 0,
+     "mag": 0,
+     "con": "CAS"
+    },
+    "tonight_visibility": {
+     "max_altitude": 59,
+     "max_altitude_hour": "02:13",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "06:25",
+       "imaging_time_hours": 10.2,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 60.4
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "VDB 9",
+     "main_name": "VDB 9",
+     "ids": [
+      "VDB 9",
+      "HD 17463",
+      "HIP 13367",
+      "IRAS 02474+6840"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "rneb",
+      "dineb",
+      "neb",
+      "ism",
+      "deep_sky_object",
+      "ccvar",
+      "cevar",
+      "evst",
+      "str",
+      "mirsrc",
+      "irsrc",
+      "sbin",
+      "binst",
+      "2st",
+      "nirsrc",
+      "varst"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/vdb-9/reflection-nebula/classical-cepheid-variable/mid-infrarred-source",
+     "main_image_url": "https://telescopius.com/img/dsos/ae0ba2a2e53f35277c7841a4b2ecc9b3_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/ae0ba2a2e53f35277c7841a4b2ecc9b3_thumbnail.webp",
+     "alt_ids": [],
+     "ra": 2.86632,
+     "dec": 68.888502,
+     "con": "CAS",
+     "con_name": "Cassiopeia",
+     "visual_mag": 5.8,
+     "photo_mag": 6.4,
+     "redshift": -2.3e-05
+    },
+    "tonight_times": {
+     "rise": "19:15",
+     "transit": "02:12",
+     "set": "09:09"
+    },
+    "transit_observation": {
+     "ra": 2.86632,
+     "dec": 68.888502,
+     "dist_au": 0,
+     "alt": 58.86,
+     "az": 0,
+     "mag": 5.8,
+     "con": "CAS"
+    },
+    "tonight_visibility": {
+     "max_altitude": 59,
+     "max_altitude_hour": "02:12",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "06:25",
+       "imaging_time_hours": 10.2,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 60.2
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "VDB 7",
+     "main_name": "VDB 7",
+     "ids": [
+      "VDB 7"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "rneb",
+      "dineb",
+      "neb",
+      "ism",
+      "deep_sky_object",
+      "str"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/vdb-7/reflection-nebula/star/interstellar-matter",
+     "main_image_url": "https://telescopius.com/img/dsos/343f97f8b4aeb7847c3b07130f6267a3_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/343f97f8b4aeb7847c3b07130f6267a3_thumbnail.webp",
+     "alt_ids": [],
+     "ra": 2.811667,
+     "dec": 69.591667,
+     "con": "CAS",
+     "con_name": "Cassiopeia",
+     "visual_mag": 6.5
+    },
+    "tonight_times": {
+     "rise": "19:07",
+     "transit": "02:09",
+     "set": "09:10"
+    },
+    "transit_observation": {
+     "ra": 2.811667,
+     "dec": 69.591667,
+     "dist_au": 0,
+     "alt": 58.16,
+     "az": 0,
+     "mag": 6.5,
+     "con": "CAS"
+    },
+    "tonight_visibility": {
+     "max_altitude": 58,
+     "max_altitude_hour": "02:09",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "06:25",
+       "imaging_time_hours": 10.2,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 60.7
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "CL COLLINDER 463",
+     "main_name": "CL COLLINDER 463",
+     "ids": [
+      "CL COLLINDER 463",
+      "OCL 324.0"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "opcl",
+      "stcl",
+      "deep_sky_object",
+      "stass"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/cl-collinder-463/open-cluster/stellar-association/star-cluster",
+     "main_image_url": "https://telescopius.com/img/dsos/8059f331987f1f6d79854fb1d8a24f40_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/8059f331987f1f6d79854fb1d8a24f40_thumbnail.webp",
+     "alt_ids": [
+      "CR 463",
+      "COLLINDER 463"
+     ],
+     "ra": 1.802056,
+     "dec": 71.738056,
+     "con": "CAS",
+     "con_name": "Cassiopeia",
+     "major_axis": 4380,
+     "minor_axis": 4380,
+     "pa_east": 0,
+     "redshift": -5e-05
+    },
+    "tonight_times": {
+     "rise": "17:52",
+     "transit": "01:08",
+     "set": "08:24"
+    },
+    "transit_observation": {
+     "ra": 1.802056,
+     "dec": 71.738056,
+     "dist_au": 0,
+     "alt": 56.01,
+     "az": 0,
+     "mag": 0,
+     "con": "CAS"
+    },
+    "tonight_visibility": {
+     "max_altitude": 56,
+     "max_altitude_hour": "01:08",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "06:25",
+       "imaging_time_hours": 10.2,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 61
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "LDN 1353",
+     "main_name": "LDN 1353",
+     "ids": [
+      "LDN 1353"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "dkneb",
+      "dineb",
+      "neb",
+      "ism",
+      "deep_sky_object"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/ldn-1353/dark-nebula",
+     "main_image_url": "https://telescopius.com/img/dsos/c089bc7eea50a1fca175a1119e67b68a_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/c089bc7eea50a1fca175a1119e67b68a_thumbnail.webp",
+     "alt_ids": [],
+     "ra": 2.74,
+     "dec": 68.216667,
+     "con": "CAS",
+     "con_name": "Cassiopeia",
+     "major_axis": 5700,
+     "minor_axis": 5700,
+     "pa_east": 90
+    },
+    "tonight_times": {
+     "rise": "19:11",
+     "transit": "02:04",
+     "set": "08:57"
+    },
+    "transit_observation": {
+     "ra": 2.74,
+     "dec": 68.216667,
+     "dist_au": 0,
+     "alt": 59.53,
+     "az": 0,
+     "mag": 0,
+     "con": "CAS"
+    },
+    "tonight_visibility": {
+     "max_altitude": 60,
+     "max_altitude_hour": "02:04",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "06:25",
+       "imaging_time_hours": 10.2,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 59.3
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "LDN 1358",
+     "main_name": "LDN 1358",
+     "ids": [
+      "LDN 1358"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "dkneb",
+      "dineb",
+      "neb",
+      "ism",
+      "deep_sky_object"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/ldn-1358/dark-nebula",
+     "main_image_url": "https://telescopius.com/img/dsos/633e56d03c26b86285669a25f6d26897_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/633e56d03c26b86285669a25f6d26897_thumbnail.webp",
+     "alt_ids": [],
+     "ra": 2.931667,
+     "dec": 69.346667,
+     "con": "CAS",
+     "con_name": "Cassiopeia",
+     "major_axis": 360,
+     "minor_axis": 90,
+     "pa_east": 90
+    },
+    "tonight_times": {
+     "rise": "19:16",
+     "transit": "02:16",
+     "set": "09:15"
+    },
+    "transit_observation": {
+     "ra": 2.931667,
+     "dec": 69.346667,
+     "dist_au": 0,
+     "alt": 58.4,
+     "az": 0,
+     "mag": 0,
+     "con": "CAS"
+    },
+    "tonight_visibility": {
+     "max_altitude": 58,
+     "max_altitude_hour": "02:16",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "06:25",
+       "imaging_time_hours": 10.2,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 60.8
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "VDB 8",
+     "main_name": "VDB 8",
+     "ids": [
+      "VDB 8",
+      "MCG +11-04-002",
+      "PGC 10828",
+      "IRAS 02471+6736",
+      "MCG +11-4-02",
+      "MCG +11-4-2"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "rneb",
+      "dineb",
+      "neb",
+      "ism",
+      "deep_sky_object",
+      "irsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/vdb-8/reflection-nebula/infra-red-source",
+     "main_image_url": "https://telescopius.com/img/dsos/478199f479ea34bcde285a51b7b5da36_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/478199f479ea34bcde285a51b7b5da36_thumbnail.webp",
+     "alt_ids": [
+      "LEDA 10828",
+      "CPG 10828"
+     ],
+     "ra": 2.859139,
+     "dec": 67.813611,
+     "con": "CAS",
+     "con_name": "Cassiopeia",
+     "visual_mag": 8.5,
+     "major_axis": 92,
+     "minor_axis": 35,
+     "pa_east": 135,
+     "subr": 17.03
+    },
+    "tonight_times": {
+     "rise": "19:21",
+     "transit": "02:11",
+     "set": "09:02"
+    },
+    "transit_observation": {
+     "ra": 2.859139,
+     "dec": 67.813611,
+     "dist_au": 0,
+     "alt": 59.93,
+     "az": 0,
+     "mag": 8.5,
+     "con": "CAS"
+    },
+    "tonight_visibility": {
+     "max_altitude": 60,
+     "max_altitude_hour": "02:11",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "06:25",
+       "imaging_time_hours": 10.2,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 59.3
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "LDN 1357",
+     "main_name": "LDN 1357",
+     "ids": [
+      "LDN 1357"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "dkneb",
+      "dineb",
+      "neb",
+      "ism",
+      "deep_sky_object"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/ldn-1357/dark-nebula",
+     "main_image_url": "https://telescopius.com/img/dsos/d546b8aaef6c58ea0f12694521b7da3b_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/d546b8aaef6c58ea0f12694521b7da3b_thumbnail.webp",
+     "alt_ids": [],
+     "ra": 2.878333,
+     "dec": 68.88,
+     "con": "CAS",
+     "con_name": "Cassiopeia",
+     "major_axis": 240,
+     "minor_axis": 90,
+     "pa_east": 90
+    },
+    "tonight_times": {
+     "rise": "19:16",
+     "transit": "02:13",
+     "set": "09:09"
+    },
+    "transit_observation": {
+     "ra": 2.878333,
+     "dec": 68.88,
+     "dist_au": 0,
+     "alt": 58.87,
+     "az": 0,
+     "mag": 0,
+     "con": "CAS"
+    },
+    "tonight_visibility": {
+     "max_altitude": 59,
+     "max_altitude_hour": "02:13",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "06:25",
+       "imaging_time_hours": 10.2,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 60.3
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "LBN 624",
+     "main_name": "LBN 624",
+     "ids": [
+      "LBN 624",
+      "LBN 124.12+10.67",
+      "PK 124+10 1",
+      "PK 124+10 7",
+      "EGB 1",
+      "EGB 0103+73",
+      "IRAS 01036+7317"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "pneb",
+      "ism",
+      "deep_sky_object",
+      "nirsrc",
+      "irsrc",
+      "h2r",
+      "eneb",
+      "dineb",
+      "neb",
+      "widw",
+      "evst",
+      "str"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/lbn-624/planetary-nebula/near-infrarred-source/h2-region",
+     "main_image_url": "https://telescopius.com/img/dsos/68ca169c7202feeaee41a249fd01720a_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/68ca169c7202feeaee41a249fd01720a_thumbnail.webp",
+     "alt_ids": [],
+     "ra": 1.118784,
+     "dec": 73.556513,
+     "con": "CAS",
+     "con_name": "Cassiopeia",
+     "photo_mag": 16.3,
+     "major_axis": 360,
+     "minor_axis": 180
+    },
+    "tonight_times": {
+     "rise": "16:57",
+     "transit": "00:27",
+     "set": "07:58"
+    },
+    "transit_observation": {
+     "ra": 1.118784,
+     "dec": 73.556513,
+     "dist_au": 0,
+     "alt": 54.19,
+     "az": 0,
+     "mag": 0,
+     "con": "CAS"
+    },
+    "tonight_visibility": {
+     "max_altitude": 54,
+     "max_altitude_hour": "00:27",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "06:25",
+       "imaging_time_hours": 10.2,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 62.5
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "LBN 626",
+     "main_name": "LBN 626",
+     "ids": [
+      "LBN 626",
+      "LBN 125.32+10.53"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "h2r",
+      "eneb",
+      "dineb",
+      "neb",
+      "ism",
+      "deep_sky_object"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/lbn-626/h2-region/nebula",
+     "main_image_url": "https://telescopius.com/img/dsos/6e7c9766b8cac9c5ab6239db9b8c6b63_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/6e7c9766b8cac9c5ab6239db9b8c6b63_thumbnail.webp",
+     "alt_ids": [],
+     "ra": 1.4,
+     "dec": 73.3,
+     "con": "CAS",
+     "con_name": "Cassiopeia",
+     "major_axis": 9000,
+     "minor_axis": 1800
+    },
+    "tonight_times": {
+     "rise": "17:16",
+     "transit": "00:44",
+     "set": "08:13"
+    },
+    "transit_observation": {
+     "ra": 1.4,
+     "dec": 73.3,
+     "dist_au": 0,
+     "alt": 54.45,
+     "az": 0,
+     "mag": 0,
+     "con": "CAS"
+    },
+    "tonight_visibility": {
+     "max_altitude": 54,
+     "max_altitude_hour": "00:44",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "06:25",
+       "imaging_time_hours": 10.2,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 62.3
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

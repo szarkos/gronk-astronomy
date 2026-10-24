@@ -1,0 +1,81 @@
+[
+ {
+  "path": "/quote-of-the-day",
+  "params": {},
+  "status": 200,
+  "elapsed_s": 0.16
+ },
+ {
+  "path": "/solar-system/times",
+  "params": {
+   "lat": 37.7378,
+   "lon": -113.6975,
+   "timezone": "America/Denver",
+   "datetime": "2026-10-24"
+  },
+  "status": 200,
+  "elapsed_s": 0.05
+ },
+ {
+  "path": "/targets/search",
+  "params": {
+   "types": "GXY,ENEB,PNEB,GCL,OCL,SNR,RNEB",
+   "lat": 37.7378,
+   "lon": -113.6975,
+   "timezone": "America/Denver",
+   "datetime": "2026-10-24",
+   "min_alt": 30,
+   "mag_max": 10,
+   "results_per_page": 20
+  },
+  "status": 400,
+  "elapsed_s": 0.05
+ },
+ {
+  "path": "/targets/highlights",
+  "params": {
+   "types": "DEEP_SKY_OBJECT",
+   "lat": 37.7378,
+   "lon": -113.6975,
+   "timezone": "America/Denver",
+   "datetime": "2026-10-24",
+   "min_alt": 30
+  },
+  "status": 200,
+  "elapsed_s": 0.15
+ },
+ {
+  "path": "/weather/forecast",
+  "params": {
+   "lat": 37.7378,
+   "lon": -113.6975,
+   "timezone": "America/Denver"
+  },
+  "status": 200,
+  "elapsed_s": 1.09
+ },
+ {
+  "path": "/events/calendar",
+  "params": {
+   "date": "2026-10-24",
+   "days": 30,
+   "lat": 37.7378,
+   "lon": -113.6975,
+   "timezone": "America/Denver"
+  },
+  "status": 200,
+  "elapsed_s": 0.08
+ },
+ {
+  "path": "/events/highlights",
+  "params": {
+   "date": "2026-10-24",
+   "days": 30,
+   "lat": 37.7378,
+   "lon": -113.6975,
+   "timezone": "America/Denver"
+  },
+  "status": 200,
+  "elapsed_s": 0.04
+ }
+]

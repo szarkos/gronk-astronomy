@@ -1,0 +1,1241 @@
+{
+ "_request": {
+  "method": "GET",
+  "url": "https://api.telescopius.com/v2.2/targets/search",
+  "params": {
+   "types": "DEEP_SKY_OBJECT",
+   "lat": 37.7378,
+   "lon": -113.6975,
+   "timezone": "America/Denver",
+   "datetime": "2026-10-24",
+   "min_alt": 30.0,
+   "mag_max": 10.0,
+   "order": "popularity",
+   "order_asc": 0,
+   "results_per_page": 20,
+   "mag_unknown": 0,
+   "hour_min": "astronomical_sunset",
+   "hour_max": "astronomical_sunrise"
+  },
+  "status": 200,
+  "auth": "Authorization: Key [REDACTED]",
+  "fetched_at": "2026-10-24T15:49:26-0700"
+ },
+ "response": {
+  "matched": 422,
+  "page_results": [
+   {
+    "object": {
+     "main_id": "VDB 64",
+     "main_name": "VDB 64",
+     "ids": [
+      "VDB 64"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "rneb",
+      "dineb",
+      "neb",
+      "ism",
+      "deep_sky_object",
+      "mcl"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/vdb-64/reflection-nebula/molecular-cloud",
+     "main_image_url": "https://telescopius.com/img/dsos/841afc768723f7812f50e8d0447e885b_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/841afc768723f7812f50e8d0447e885b_thumbnail.webp",
+     "alt_ids": [],
+     "ra": 5.965,
+     "dec": -14.066667,
+     "con": "LEP",
+     "con_name": "Lepus",
+     "visual_mag": 10
+    },
+    "tonight_times": {
+     "rise": "03:08",
+     "transit": "05:17",
+     "set": "07:26"
+    },
+    "transit_observation": {
+     "ra": 5.965,
+     "dec": -14.066667,
+     "dist_au": 0,
+     "alt": 38.22,
+     "az": 180,
+     "mag": 10,
+     "con": "LEP"
+    },
+    "tonight_visibility": {
+     "max_altitude": 38,
+     "max_altitude_hour": "05:17",
+     "windows": [
+      {
+       "start": "00:00",
+       "end": "06:25",
+       "imaging_time_hours": 6.42,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 75.9
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1925",
+     "main_name": "HEN 3-1925",
+     "ids": [
+      "HEN 3-1925"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "elst",
+      "str",
+      "deep_sky_object",
+      "nirsrc",
+      "irsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1925/emission-line-star/near-infrarred-source/star",
+     "main_image_url": "https://telescopius.com/img/dsos/b2b833c8c59710c3800e708265de483c_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/b2b833c8c59710c3800e708265de483c_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1925"
+     ],
+     "ra": 21.019316,
+     "dec": 31.28633,
+     "con": "CYG",
+     "con_name": "Cygnus",
+     "visual_mag": 9.9,
+     "photo_mag": 10
+    },
+    "tonight_times": {
+     "rise": "15:25",
+     "transit": "20:22",
+     "set": "01:19"
+    },
+    "transit_observation": {
+     "ra": 21.019316,
+     "dec": 31.28633,
+     "dist_au": 0,
+     "alt": 83.55,
+     "az": 180,
+     "mag": 9.9,
+     "con": "CYG"
+    },
+    "tonight_visibility": {
+     "max_altitude": 84,
+     "max_altitude_hour": "20:22",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "04:17",
+       "imaging_time_hours": 8.07,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 59.8
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1912",
+     "main_name": "HEN 3-1912",
+     "ids": [
+      "HEN 3-1912",
+      "HD 340579"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "elst",
+      "str",
+      "deep_sky_object",
+      "nirsrc",
+      "irsrc",
+      "mirsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1912/emission-line-star/near-infrarred-source/mid-infrarred-source",
+     "main_image_url": "https://telescopius.com/img/dsos/4b6fcd7129c99b70efe3b462c961ed6b_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/4b6fcd7129c99b70efe3b462c961ed6b_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1912"
+     ],
+     "ra": 20.579299,
+     "dec": 26.195711,
+     "con": "VUL",
+     "con_name": "Vulpecula",
+     "visual_mag": 9.9,
+     "photo_mag": 10
+    },
+    "tonight_times": {
+     "rise": "15:12",
+     "transit": "19:56",
+     "set": "00:39"
+    },
+    "transit_observation": {
+     "ra": 20.579299,
+     "dec": 26.195711,
+     "dist_au": 0,
+     "alt": 78.46,
+     "az": 179.99,
+     "mag": 9.9,
+     "con": "VUL"
+    },
+    "tonight_visibility": {
+     "max_altitude": 78,
+     "max_altitude_hour": "19:56",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "03:27",
+       "imaging_time_hours": 7.23,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 65.2
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1906",
+     "main_name": "HEN 3-1906",
+     "ids": [
+      "HEN 3-1906",
+      "HD 340461"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "elst",
+      "str",
+      "deep_sky_object",
+      "nirsrc",
+      "irsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1906/emission-line-star/near-infrarred-source/star",
+     "main_image_url": "https://telescopius.com/img/dsos/dad2d31d139405e3baafd38e8435a764_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/dad2d31d139405e3baafd38e8435a764_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1906"
+     ],
+     "ra": 20.53769,
+     "dec": 26.746367,
+     "con": "VUL",
+     "con_name": "Vulpecula",
+     "visual_mag": 9.9,
+     "photo_mag": 10
+    },
+    "tonight_times": {
+     "rise": "15:08",
+     "transit": "19:53",
+     "set": "00:38"
+    },
+    "transit_observation": {
+     "ra": 20.53769,
+     "dec": 26.746367,
+     "dist_au": 0,
+     "alt": 79.01,
+     "az": 179.98,
+     "mag": 9.9,
+     "con": "VUL"
+    },
+    "tonight_visibility": {
+     "max_altitude": 79,
+     "max_altitude_hour": "19:53",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "03:27",
+       "imaging_time_hours": 7.23,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 65.8
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1784",
+     "main_name": "HEN 3-1784",
+     "ids": [
+      "HEN 3-1784",
+      "HIP 97594",
+      "IRAS 19483+3533"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "symst",
+      "dms",
+      "deep_sky_object",
+      "catbin",
+      "varst",
+      "str",
+      "sbin",
+      "binst",
+      "2st",
+      "elst",
+      "nirsrc",
+      "irsrc",
+      "ebin"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1784/symbiotic-star/cataclysmic-binary/variable-star",
+     "main_image_url": "https://telescopius.com/img/dsos/9a14a4de544a73af9baf67e8bbf9d388_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/9a14a4de544a73af9baf67e8bbf9d388_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1784"
+     ],
+     "ra": 19.836621,
+     "dec": 35.684168,
+     "con": "CYG",
+     "con_name": "Cygnus",
+     "visual_mag": 9.9,
+     "photo_mag": 12,
+     "redshift": 5e-05
+    },
+    "tonight_times": {
+     "rise": "14:03",
+     "transit": "19:11",
+     "set": "00:19"
+    },
+    "transit_observation": {
+     "ra": 19.836621,
+     "dec": 35.684168,
+     "dist_au": 0,
+     "alt": 87.95,
+     "az": 179.91,
+     "mag": 9.9,
+     "con": "CYG"
+    },
+    "tonight_visibility": {
+     "max_altitude": 88,
+     "max_altitude_hour": "19:11",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "03:29",
+       "imaging_time_hours": 7.27,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 74.6
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1807",
+     "main_name": "HEN 3-1807",
+     "ids": [
+      "HEN 3-1807",
+      "HD 226857"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "elst",
+      "str",
+      "deep_sky_object",
+      "nirsrc",
+      "irsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1807/emission-line-star/near-infrarred-source/star",
+     "main_image_url": "https://telescopius.com/img/dsos/cf053917366611df0975fb4a61bbd298_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/cf053917366611df0975fb4a61bbd298_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1807"
+     ],
+     "ra": 19.969924,
+     "dec": 36.16408,
+     "con": "CYG",
+     "con_name": "Cygnus",
+     "visual_mag": 9.8,
+     "photo_mag": 9.8
+    },
+    "tonight_times": {
+     "rise": "14:10",
+     "transit": "19:19",
+     "set": "00:28"
+    },
+    "transit_observation": {
+     "ra": 19.969924,
+     "dec": 36.16408,
+     "dist_au": 0,
+     "alt": 88.43,
+     "az": 179.93,
+     "mag": 9.8,
+     "con": "CYG"
+    },
+    "tonight_visibility": {
+     "max_altitude": 88,
+     "max_altitude_hour": "19:19",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "03:40",
+       "imaging_time_hours": 7.45,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 73
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1754",
+     "main_name": "HEN 3-1754",
+     "ids": [
+      "HEN 3-1754",
+      "HD 231745"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "elst",
+      "str",
+      "deep_sky_object",
+      "nirsrc",
+      "irsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1754/emission-line-star/near-infrarred-source/star",
+     "main_image_url": "https://telescopius.com/img/dsos/c07928667ca3bb0155268e3478fb2938_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/c07928667ca3bb0155268e3478fb2938_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1754"
+     ],
+     "ra": 19.545989,
+     "dec": 16.412523,
+     "con": "AQL",
+     "con_name": "Aquila",
+     "visual_mag": 9.8,
+     "photo_mag": 10.1
+    },
+    "tonight_times": {
+     "rise": "14:37",
+     "transit": "18:54",
+     "set": "23:11"
+    },
+    "transit_observation": {
+     "ra": 19.545989,
+     "dec": 16.412523,
+     "dist_au": 0,
+     "alt": 68.68,
+     "az": 179.99,
+     "mag": 9.8,
+     "con": "AQL"
+    },
+    "tonight_visibility": {
+     "max_altitude": 69,
+     "max_altitude_hour": "18:54",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "01:48",
+       "imaging_time_hours": 5.58,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 80.2
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "VDB 53",
+     "main_name": "VDB 53",
+     "ids": [
+      "VDB 53"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "rneb",
+      "dineb",
+      "neb",
+      "ism",
+      "deep_sky_object",
+      "str",
+      "nirsrc",
+      "irsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/vdb-53/reflection-nebula/star/near-infrarred-source",
+     "main_image_url": "https://telescopius.com/img/dsos/b9b98a9b9721bec92442df4444282b64_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/b9b98a9b9721bec92442df4444282b64_thumbnail.webp",
+     "alt_ids": [],
+     "ra": 5.690529,
+     "dec": -10.311673,
+     "con": "ORI",
+     "con_name": "Orion",
+     "visual_mag": 9.5
+    },
+    "tonight_times": {
+     "rise": "02:27",
+     "transit": "05:01",
+     "set": "07:34"
+    },
+    "transit_observation": {
+     "ra": 5.690529,
+     "dec": -10.311673,
+     "dist_au": 0,
+     "alt": 41.97,
+     "az": 180,
+     "mag": 9.5,
+     "con": "ORI"
+    },
+    "tonight_visibility": {
+     "max_altitude": 42,
+     "max_altitude_hour": "05:01",
+     "windows": [
+      {
+       "start": "23:31",
+       "end": "06:25",
+       "imaging_time_hours": 6.9,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 71
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1826",
+     "main_name": "HEN 3-1826",
+     "ids": [
+      "HEN 3-1826",
+      "HD 351336"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "elst",
+      "str",
+      "deep_sky_object",
+      "nirsrc",
+      "irsrc",
+      "uvsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1826/emission-line-star/near-infrarred-source/star",
+     "main_image_url": "https://telescopius.com/img/dsos/24bbd831b0c64cd70ac999d4b2c24424_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/24bbd831b0c64cd70ac999d4b2c24424_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1826"
+     ],
+     "ra": 20.087879,
+     "dec": 19.088117,
+     "con": "SGE",
+     "con_name": "Sagitta",
+     "visual_mag": 9.5,
+     "photo_mag": 9.5
+    },
+    "tonight_times": {
+     "rise": "15:01",
+     "transit": "19:26",
+     "set": "23:51"
+    },
+    "transit_observation": {
+     "ra": 20.087879,
+     "dec": 19.088117,
+     "dist_au": 0,
+     "alt": 71.36,
+     "az": 180,
+     "mag": 9.5,
+     "con": "SGE"
+    },
+    "tonight_visibility": {
+     "max_altitude": 71,
+     "max_altitude_hour": "19:26",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "02:30",
+       "imaging_time_hours": 6.28,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 72.3
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "VDB 89",
+     "main_name": "VDB 89",
+     "ids": [
+      "VDB 89"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "rneb",
+      "dineb",
+      "neb",
+      "ism",
+      "deep_sky_object",
+      "str",
+      "nirsrc",
+      "irsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/vdb-89/reflection-nebula/star/near-infrarred-source",
+     "main_image_url": "https://telescopius.com/img/dsos/7f011f5865419e24664a18d467413a7a_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/7f011f5865419e24664a18d467413a7a_thumbnail.webp",
+     "alt_ids": [],
+     "ra": 7.044067,
+     "dec": -12.233773,
+     "con": "CMA",
+     "con_name": "Canis Major",
+     "visual_mag": 9.5,
+     "major_axis": 1.1,
+     "subr": 9.4
+    },
+    "tonight_times": {
+     "rise": "04:00",
+     "transit": "06:22",
+     "set": "08:43"
+    },
+    "transit_observation": {
+     "ra": 7.044067,
+     "dec": -12.233773,
+     "dist_au": 0,
+     "alt": 40.05,
+     "az": 180,
+     "mag": 9.5,
+     "con": "CMA"
+    },
+    "tonight_visibility": {
+     "max_altitude": 40,
+     "max_altitude_hour": "06:22",
+     "windows": [
+      {
+       "start": "00:58",
+       "end": "06:25",
+       "imaging_time_hours": 5.45,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 90.6
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1740",
+     "main_name": "HEN 3-1740",
+     "ids": [
+      "HEN 3-1740",
+      "HD 230909"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "elst",
+      "str",
+      "deep_sky_object",
+      "nirsrc",
+      "irsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1740/emission-line-star/near-infrarred-source/star",
+     "main_image_url": "https://telescopius.com/img/dsos/2c8bbd511412a87970974552d155c2dc_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/2c8bbd511412a87970974552d155c2dc_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1740"
+     ],
+     "ra": 19.223244,
+     "dec": 17.354317,
+     "con": "SGE",
+     "con_name": "Sagitta",
+     "visual_mag": 9.4,
+     "photo_mag": 9.7
+    },
+    "tonight_times": {
+     "rise": "14:15",
+     "transit": "18:34",
+     "set": "22:54"
+    },
+    "transit_observation": {
+     "ra": 19.223244,
+     "dec": 17.354317,
+     "dist_au": 0,
+     "alt": 69.62,
+     "az": 179.99,
+     "mag": 9.4,
+     "con": "SGE"
+    },
+    "tonight_visibility": {
+     "max_altitude": 70,
+     "max_altitude_hour": "18:34",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "01:32",
+       "imaging_time_hours": 5.32,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 84.6
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1747",
+     "main_name": "HEN 3-1747",
+     "ids": [
+      "HEN 3-1747"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "symst",
+      "dms",
+      "deep_sky_object",
+      "varst",
+      "str",
+      "sbin",
+      "binst",
+      "2st",
+      "nirsrc",
+      "irsrc",
+      "elst"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1747/symbiotic-star/variable-star/spectroscopic-binary",
+     "main_image_url": "https://telescopius.com/img/dsos/14d4530566609e697c69f5a79db82be3_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/14d4530566609e697c69f5a79db82be3_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1747"
+     ],
+     "ra": 19.398195,
+     "dec": 29.674771,
+     "con": "CYG",
+     "con_name": "Cygnus",
+     "visual_mag": 9.3,
+     "photo_mag": 10.5,
+     "redshift": 1e-05
+    },
+    "tonight_times": {
+     "rise": "13:52",
+     "transit": "18:45",
+     "set": "23:38"
+    },
+    "transit_observation": {
+     "ra": 19.398195,
+     "dec": 29.674771,
+     "dist_au": 0,
+     "alt": 81.94,
+     "az": 179.98,
+     "mag": 9.3,
+     "con": "CYG"
+    },
+    "tonight_visibility": {
+     "max_altitude": 82,
+     "max_altitude_hour": "18:45",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "02:32",
+       "imaging_time_hours": 6.32,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 80.6
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "VDB 66",
+     "main_name": "VDB 66",
+     "ids": [
+      "VDB 66"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "rneb",
+      "dineb",
+      "neb",
+      "ism",
+      "deep_sky_object",
+      "str",
+      "nirsrc",
+      "irsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/vdb-66/reflection-nebula/star/near-infrarred-source",
+     "main_image_url": "https://telescopius.com/img/dsos/0f9744be945baf28a22b6ec80fba345d_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/0f9744be945baf28a22b6ec80fba345d_thumbnail.webp",
+     "alt_ids": [],
+     "ra": 6.051486,
+     "dec": -9.716544,
+     "con": "MON",
+     "con_name": "Monoceros",
+     "visual_mag": 9.3,
+     "major_axis": 0.9,
+     "subr": 8.8
+    },
+    "tonight_times": {
+     "rise": "02:45",
+     "transit": "05:22",
+     "set": "07:59"
+    },
+    "transit_observation": {
+     "ra": 6.051486,
+     "dec": -9.716544,
+     "dist_au": 0,
+     "alt": 42.56,
+     "az": 180,
+     "mag": 9.3,
+     "con": "MON"
+    },
+    "tonight_visibility": {
+     "max_altitude": 43,
+     "max_altitude_hour": "05:22",
+     "windows": [
+      {
+       "start": "23:51",
+       "end": "06:25",
+       "imaging_time_hours": 6.57,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 76
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1908",
+     "main_name": "HEN 3-1908",
+     "ids": [
+      "HEN 3-1908",
+      "HIP 101341",
+      "IRAS 20305+4108"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "bsg",
+      "esg",
+      "mst",
+      "str",
+      "deep_sky_object",
+      "varst",
+      "ebin",
+      "binst",
+      "2st",
+      "sbin",
+      "nirsrc",
+      "irsrc",
+      "elst",
+      "dms",
+      "xrsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1908/blue-supergiant/variable-star/eclipsing-binary",
+     "main_image_url": "https://telescopius.com/img/dsos/cef951ab76493730624d0ce93a837a31_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/cef951ab76493730624d0ce93a837a31_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1908"
+     ],
+     "ra": 20.539562,
+     "dec": 41.305262,
+     "con": "CYG",
+     "con_name": "Cygnus",
+     "visual_mag": 9.2,
+     "photo_mag": 10.6,
+     "redshift": -0.000116
+    },
+    "tonight_times": {
+     "rise": "14:31",
+     "transit": "19:53",
+     "set": "01:15"
+    },
+    "transit_observation": {
+     "ra": 20.539562,
+     "dec": 41.305262,
+     "dist_au": 0,
+     "alt": 86.43,
+     "az": 0.03,
+     "mag": 9.2,
+     "con": "CYG"
+    },
+    "tonight_visibility": {
+     "max_altitude": 86,
+     "max_altitude_hour": "19:53",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "04:49",
+       "imaging_time_hours": 8.58,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 66.6
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1759",
+     "main_name": "HEN 3-1759",
+     "ids": [
+      "HEN 3-1759"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "elst",
+      "str",
+      "deep_sky_object",
+      "nirsrc",
+      "irsrc",
+      "uvsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1759/emission-line-star/near-infrarred-source/star",
+     "main_image_url": "https://telescopius.com/img/dsos/7cfae6f4500a660749a99344bec1ebba_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/7cfae6f4500a660749a99344bec1ebba_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1759"
+     ],
+     "ra": 19.602922,
+     "dec": 29.821276,
+     "con": "CYG",
+     "con_name": "Cygnus",
+     "visual_mag": 9.2,
+     "photo_mag": 9.2,
+     "redshift": 4.3e-05
+    },
+    "tonight_times": {
+     "rise": "14:04",
+     "transit": "18:57",
+     "set": "23:50"
+    },
+    "transit_observation": {
+     "ra": 19.602922,
+     "dec": 29.821276,
+     "dist_au": 0,
+     "alt": 82.09,
+     "az": 179.97,
+     "mag": 9.2,
+     "con": "CYG"
+    },
+    "tonight_visibility": {
+     "max_altitude": 82,
+     "max_altitude_hour": "18:57",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "02:45",
+       "imaging_time_hours": 6.53,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 77.9
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1814",
+     "main_name": "HEN 3-1814",
+     "ids": [
+      "HEN 3-1814",
+      "HD 333410",
+      "HIP 98635"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "best",
+      "msqst",
+      "str",
+      "deep_sky_object",
+      "varst",
+      "nirsrc",
+      "irsrc",
+      "elst"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1814/be-star/variable-star/near-infrarred-source",
+     "main_image_url": "https://telescopius.com/img/dsos/1b949b50fa033b8bd6789295f4e9f6d8_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/1b949b50fa033b8bd6789295f4e9f6d8_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1814"
+     ],
+     "ra": 20.033696,
+     "dec": 29.585881,
+     "con": "CYG",
+     "con_name": "Cygnus",
+     "visual_mag": 9.1,
+     "photo_mag": 9.2,
+     "redshift": 7.3e-05
+    },
+    "tonight_times": {
+     "rise": "14:31",
+     "transit": "19:23",
+     "set": "00:15"
+    },
+    "transit_observation": {
+     "ra": 20.033696,
+     "dec": 29.585881,
+     "dist_au": 0,
+     "alt": 81.85,
+     "az": 179.99,
+     "mag": 9.1,
+     "con": "CYG"
+    },
+    "tonight_visibility": {
+     "max_altitude": 82,
+     "max_altitude_hour": "19:23",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "03:10",
+       "imaging_time_hours": 6.95,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 72.4
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1919",
+     "main_name": "HEN 3-1919",
+     "ids": [
+      "HEN 3-1919"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "elst",
+      "str",
+      "deep_sky_object",
+      "nirsrc",
+      "irsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1919/emission-line-star/near-infrarred-source/star",
+     "main_image_url": "https://telescopius.com/img/dsos/37e81f101dda498ebc990a4cd6063d94_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/37e81f101dda498ebc990a4cd6063d94_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1919"
+     ],
+     "ra": 20.783871,
+     "dec": 32.157379,
+     "con": "CYG",
+     "con_name": "Cygnus",
+     "visual_mag": 8.8,
+     "photo_mag": 8.9,
+     "redshift": -7e-05
+    },
+    "tonight_times": {
+     "rise": "15:09",
+     "transit": "20:08",
+     "set": "01:07"
+    },
+    "transit_observation": {
+     "ra": 20.783871,
+     "dec": 32.157379,
+     "dist_au": 0,
+     "alt": 84.42,
+     "az": 179.97,
+     "mag": 8.8,
+     "con": "CYG"
+    },
+    "tonight_visibility": {
+     "max_altitude": 84,
+     "max_altitude_hour": "20:08",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "04:07",
+       "imaging_time_hours": 7.9,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 62.8
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1801",
+     "main_name": "HEN 3-1801",
+     "ids": [
+      "HEN 3-1801",
+      "HD 339184"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "elst",
+      "str",
+      "deep_sky_object",
+      "pulvar",
+      "varst",
+      "nirsrc",
+      "irsrc",
+      "mirsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1801/emission-line-star/pulsating-variable-star/near-infrarred-source",
+     "main_image_url": "https://telescopius.com/img/dsos/c6684fe765d3305a2f030baaea7050ab_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/c6684fe765d3305a2f030baaea7050ab_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1801"
+     ],
+     "ra": 19.919787,
+     "dec": 26.583004,
+     "con": "VUL",
+     "con_name": "Vulpecula",
+     "visual_mag": 8.7,
+     "photo_mag": 8.9,
+     "redshift": -1.7e-05
+    },
+    "tonight_times": {
+     "rise": "14:31",
+     "transit": "19:16",
+     "set": "00:01"
+    },
+    "transit_observation": {
+     "ra": 19.919787,
+     "dec": 26.583004,
+     "dist_au": 0,
+     "alt": 78.85,
+     "az": 179.99,
+     "mag": 8.7,
+     "con": "VUL"
+    },
+    "tonight_visibility": {
+     "max_altitude": 79,
+     "max_altitude_hour": "19:16",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "02:50",
+       "imaging_time_hours": 6.62,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 74
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "HEN 3-1817",
+     "main_name": "HEN 3-1817",
+     "ids": [
+      "HEN 3-1817",
+      "HD 190150",
+      "HIP 98696"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "best",
+      "msqst",
+      "str",
+      "deep_sky_object",
+      "nirsrc",
+      "irsrc",
+      "elst",
+      "uvsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/hen-3-1817/be-star/near-infrarred-source/emission-line-star",
+     "main_image_url": "https://telescopius.com/img/dsos/59f8ab6e281984bd7b94c80f959ec1fa_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/59f8ab6e281984bd7b94c80f959ec1fa_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1817"
+     ],
+     "ra": 20.04623,
+     "dec": 21.854425,
+     "con": "VUL",
+     "con_name": "Vulpecula",
+     "visual_mag": 8.3,
+     "photo_mag": 8.3,
+     "redshift": 0.001398
+    },
+    "tonight_times": {
+     "rise": "14:51",
+     "transit": "19:24",
+     "set": "23:56"
+    },
+    "transit_observation": {
+     "ra": 20.04623,
+     "dec": 21.854425,
+     "dist_au": 0,
+     "alt": 74.12,
+     "az": 179.99,
+     "mag": 8.3,
+     "con": "VUL"
+    },
+    "tonight_visibility": {
+     "max_altitude": 74,
+     "max_altitude_hour": "19:24",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "02:38",
+       "imaging_time_hours": 6.42,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 72.6
+      }
+     ]
+    }
+   },
+   {
+    "object": {
+     "main_id": "WR 139",
+     "main_name": "WR 139",
+     "ids": [
+      "WR 139",
+      "HEN 3-1877",
+      "HD 193576",
+      "HIP 100214",
+      "IRAS 20177+3834"
+     ],
+     "names": [],
+     "family": "deep_sky_object",
+     "types": [
+      "str",
+      "deep_sky_object",
+      "ebin",
+      "binst",
+      "2st",
+      "varst",
+      "nirsrc",
+      "irsrc",
+      "elst",
+      "sbin",
+      "xrsrc"
+     ],
+     "url": "https://telescopius.com/deep-sky-objects/wr-139/star/eclipsing-binary/variable-star",
+     "main_image_url": "https://telescopius.com/img/dsos/2ce57b27009c8cd859291a5488c5794f_fullhd.webp",
+     "thumbnail_url": "https://telescopius.com/img/dsos/2ce57b27009c8cd859291a5488c5794f_thumbnail.webp",
+     "alt_ids": [
+      "HENIZE 3-1877"
+     ],
+     "ra": 20.325673,
+     "dec": 38.731655,
+     "con": "CYG",
+     "con_name": "Cygnus",
+     "visual_mag": 8,
+     "photo_mag": 8.5,
+     "redshift": 1e-05
+    },
+    "tonight_times": {
+     "rise": "14:25",
+     "transit": "19:40",
+     "set": "00:56"
+    },
+    "transit_observation": {
+     "ra": 20.325673,
+     "dec": 38.731655,
+     "dist_au": 0,
+     "alt": 89.01,
+     "az": 0.14,
+     "mag": 8,
+     "con": "CYG"
+    },
+    "tonight_visibility": {
+     "max_altitude": 89,
+     "max_altitude_hour": "19:40",
+     "windows": [
+      {
+       "start": "20:13",
+       "end": "04:17",
+       "imaging_time_hours": 8.07,
+       "moon_illumination_percent": 0.99,
+       "moon_distance_deg": 68.9
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "_request": {
+  "method": "GET",
+  "url": "https://api.telescopius.com/v2.2/quote-of-the-day",
+  "params": {},
+  "status": 200,
+  "auth": "Authorization: Key [REDACTED]",
+  "fetched_at": "2026-10-24T15:47:22-0700"
+ },
+ "response": {
+  "text": "Some people seek meaning in life through personal gain, through personal relationship, or through personal experiences. However, it seems to me that being blessed with the intellect to divine the ultimate secrets of nature gives meaning enough to life.",
+  "author": "Michio Kaku"
+ }
+}

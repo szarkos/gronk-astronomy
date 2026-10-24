@@ -1,0 +1,458 @@
+{
+ "_request": {
+  "method": "GET",
+  "url": "https://api.telescopius.com/v2.2/events/calendar",
+  "params": {
+   "date": "2026-10-24",
+   "days": 30,
+   "lat": 37.7378,
+   "lon": -113.6975,
+   "timezone": "America/Denver"
+  },
+  "status": 200,
+  "auth": "Authorization: Key [REDACTED]",
+  "fetched_at": "2026-10-24T15:47:41-0700"
+ },
+ "response": {
+  "days": 30,
+  "total_events": 24,
+  "events": [
+   {
+    "type": "PLANET_INFERIOR_CONJUNCTION",
+    "name": "Venus at Inferior Conjunction",
+    "object": "Venus",
+    "timestamp": 1792812803,
+    "datetime": "2026-10-24T03:33:23.331Z",
+    "highlight_tier": 5
+   },
+   {
+    "type": "MOON_PHASE",
+    "name": "Full Moon",
+    "object": "Moon",
+    "moon_phase": "FULL",
+    "timestamp": 1792987935,
+    "datetime": "2026-10-26T04:12:15.538Z",
+    "distance_km": 368859,
+    "is_supermoon": false,
+    "is_micromoon": false,
+    "is_blue_moon": false,
+    "is_black_moon": false,
+    "traditional_name": "Hunter's Moon",
+    "highlight_tier": 5
+   },
+   {
+    "type": "MOON_PERIGEE",
+    "name": "Moon at Perigee",
+    "object": "Moon",
+    "timestamp": 1793210651,
+    "datetime": "2026-10-28T18:04:11.197Z",
+    "distance_km": 364397,
+    "highlight_tier": 5
+   },
+   {
+    "type": "TWO_OBJECTS_CONJUNCTION",
+    "name": "Conjunction of the Moon and Pollux",
+    "objects": [
+     "Moon",
+     "Pollux"
+    ],
+    "deg": 3.9,
+    "timestamp": 1793465803,
+    "datetime": "2026-10-31T16:56:43.581Z",
+    "highlight_tier": 3
+   },
+   {
+    "type": "MOON_PHASE",
+    "name": "Third Quarter Moon",
+    "object": "Moon",
+    "moon_phase": "LAST_QUARTER",
+    "timestamp": 1793564938,
+    "datetime": "2026-11-01T20:28:58.794Z",
+    "distance_km": 372607,
+    "is_supermoon": false,
+    "is_micromoon": false,
+    "is_blue_moon": false,
+    "is_black_moon": false,
+    "traditional_name": "",
+    "highlight_tier": 5
+   },
+   {
+    "type": "PLANET_OCCULTATION",
+    "name": "Lunar Occultation of Mars",
+    "objects": [
+     "Moon",
+     "Mars"
+    ],
+    "deg": 1,
+    "timestamp": 1793626747,
+    "datetime": "2026-11-02T13:39:07.810Z",
+    "is_occultation": true,
+    "geographic_regions": "Antarctica",
+    "highlight_tier": 2,
+    "visible_locally": false,
+    "moon_altitude": 58
+   },
+   {
+    "type": "PLANET_OCCULTATION",
+    "name": "Lunar Occultation of Jupiter",
+    "objects": [
+     "Moon",
+     "Jupiter"
+    ],
+    "deg": 0.5,
+    "timestamp": 1793659554,
+    "datetime": "2026-11-02T22:45:54.815Z",
+    "is_occultation": true,
+    "geographic_regions": "Australia & Oceania, Asia",
+    "highlight_tier": 2,
+    "visible_locally": false,
+    "moon_altitude": -21
+   },
+   {
+    "type": "TWO_OBJECTS_CONJUNCTION",
+    "name": "Conjunction of the Moon and Regulus",
+    "objects": [
+     "Moon",
+     "Regulus"
+    ],
+    "deg": 0.8,
+    "timestamp": 1793695349,
+    "datetime": "2026-11-03T08:42:29.318Z",
+    "highlight_tier": 3
+   },
+   {
+    "type": "PLANET_INFERIOR_CONJUNCTION",
+    "name": "Mercury at Inferior Conjunction",
+    "object": "Mercury",
+    "timestamp": 1793801916,
+    "datetime": "2026-11-04T14:18:36.902Z",
+    "highlight_tier": 5
+   },
+   {
+    "type": "METEOR_SHOWER",
+    "id": "southern_taurids",
+    "name": "Southern Taurids",
+    "timestamp": 1793872889,
+    "datetime": "2026-11-05T10:01:29.212Z",
+    "year": 2026,
+    "month": 11,
+    "zhr": 5,
+    "radiant": {
+     "ra": 3.47,
+     "dec": 15
+    },
+    "parent_body": "2P/Encke",
+    "active_window": "2026-09-10 to 2026-11-20",
+    "moon_illumination": 15,
+    "moon_phase_name": "Last Quarter",
+    "rating": "EXCELLENT",
+    "highlight_tier": 2
+   },
+   {
+    "type": "PLANET_OCCULTATION",
+    "name": "Lunar Occultation of Venus",
+    "objects": [
+     "Moon",
+     "Venus"
+    ],
+    "deg": 1,
+    "timestamp": 1794048143,
+    "datetime": "2026-11-07T10:42:23.983Z",
+    "is_occultation": true,
+    "geographic_regions": "South America, Antarctica",
+    "highlight_tier": 2,
+    "visible_locally": false,
+    "moon_altitude": -36
+   },
+   {
+    "type": "TWO_OBJECTS_CONJUNCTION",
+    "name": "Conjunction of the Moon and Spica",
+    "objects": [
+     "Moon",
+     "Spica"
+    ],
+    "deg": 2.2,
+    "timestamp": 1794051107,
+    "datetime": "2026-11-07T11:31:47.536Z",
+    "highlight_tier": 3
+   },
+   {
+    "type": "MOON_PHASE",
+    "name": "New Moon",
+    "object": "Moon",
+    "moon_phase": "NEW",
+    "timestamp": 1794207762,
+    "datetime": "2026-11-09T07:02:42.392Z",
+    "distance_km": 397761,
+    "is_supermoon": false,
+    "is_micromoon": false,
+    "is_blue_moon": false,
+    "is_black_moon": false,
+    "traditional_name": "",
+    "highlight_tier": 1
+   },
+   {
+    "type": "TWO_OBJECTS_CONJUNCTION",
+    "name": "Conjunction of Venus and Spica",
+    "objects": [
+     "Venus",
+     "Spica"
+    ],
+    "deg": 1.2,
+    "timestamp": 1794221593,
+    "datetime": "2026-11-09T10:53:13.479Z",
+    "highlight_tier": 3
+   },
+   {
+    "type": "PLANET_PERIHELION",
+    "name": "Mercury at Perihelion",
+    "object": "Mercury",
+    "timestamp": 1794299235,
+    "datetime": "2026-11-10T08:27:15.535Z",
+    "distance_au": 0.3075,
+    "highlight_tier": 5
+   },
+   {
+    "type": "TWO_OBJECTS_CONJUNCTION",
+    "name": "Conjunction of the Moon and Antares",
+    "objects": [
+     "Moon",
+     "Antares"
+    ],
+    "deg": 0.3,
+    "timestamp": 1794371895,
+    "datetime": "2026-11-11T04:38:15.785Z",
+    "highlight_tier": 3
+   },
+   {
+    "type": "METEOR_SHOWER",
+    "id": "northern_taurids",
+    "name": "Northern Taurids",
+    "timestamp": 1794475034,
+    "datetime": "2026-11-12T09:17:14.511Z",
+    "year": 2026,
+    "month": 11,
+    "zhr": 5,
+    "radiant": {
+     "ra": 3.87,
+     "dec": 22
+    },
+    "parent_body": "2004 TG10",
+    "active_window": "2026-10-20 to 2026-12-10",
+    "moon_illumination": 9,
+    "moon_phase_name": "New Moon",
+    "rating": "EXCELLENT",
+    "highlight_tier": 2
+   },
+   {
+    "type": "MOON_APOGEE",
+    "name": "Moon at Apogee",
+    "object": "Moon",
+    "timestamp": 1794592249,
+    "datetime": "2026-11-13T17:50:49.114Z",
+    "distance_km": 405608,
+    "highlight_tier": 5
+   },
+   {
+    "type": "PLANET_ALIGNMENT",
+    "name": "Planetary Alignment",
+    "datetime": "2026-11-15T05:11:01.966Z",
+    "timestamp": 1794719461,
+    "planets": [
+     "Mars",
+     "Jupiter",
+     "Venus",
+     "Mercury"
+    ],
+    "count": 4,
+    "angular_span": 70,
+    "period": "MORNING",
+    "start_date": "2026-11-02",
+    "end_date": "2027-01-02",
+    "highlight_tier": 4
+   },
+   {
+    "type": "TWO_OBJECTS_CONJUNCTION",
+    "name": "Conjunction of Mars and Jupiter",
+    "objects": [
+     "Mars",
+     "Jupiter"
+    ],
+    "deg": 1.2,
+    "timestamp": 1794794579,
+    "datetime": "2026-11-16T02:02:59.211Z",
+    "highlight_tier": 3
+   },
+   {
+    "type": "MOON_PHASE",
+    "name": "First Quarter Moon",
+    "object": "Moon",
+    "moon_phase": "FIRST_QUARTER",
+    "timestamp": 1794916107,
+    "datetime": "2026-11-17T11:48:27.140Z",
+    "distance_km": 397505,
+    "is_supermoon": false,
+    "is_micromoon": false,
+    "is_blue_moon": false,
+    "is_black_moon": false,
+    "traditional_name": "",
+    "highlight_tier": 5
+   },
+   {
+    "type": "METEOR_SHOWER",
+    "id": "leonids",
+    "name": "Leonids",
+    "timestamp": 1794927142,
+    "datetime": "2026-11-17T14:52:22.927Z",
+    "year": 2026,
+    "month": 11,
+    "zhr": 15,
+    "radiant": {
+     "ra": 10.13,
+     "dec": 22
+    },
+    "parent_body": "55P/Tempel-Tuttle",
+    "active_window": "2026-11-06 to 2026-11-30",
+    "moon_illumination": 51,
+    "moon_phase_name": "First Quarter",
+    "rating": "MODERATE",
+    "highlight_tier": 2
+   },
+   {
+    "type": "TWO_OBJECTS_CONJUNCTION",
+    "name": "Conjunction of the Moon and Neptune",
+    "objects": [
+     "Moon",
+     "Neptune"
+    ],
+    "deg": 4.4,
+    "timestamp": 1795163367,
+    "datetime": "2026-11-20T08:29:27.788Z",
+    "highlight_tier": 3
+   },
+   {
+    "type": "GREATEST_WESTERN_ELONGATION",
+    "name": "Mercury at Greatest Western Elongation (19.6°)",
+    "object": "Mercury",
+    "timestamp": 1795217739,
+    "datetime": "2026-11-20T23:35:39.724Z",
+    "elongation_deg": 19.6,
+    "visibility_period": "morning",
+    "constellation": "Libra",
+    "constellation_code": "Lib",
+    "highlight_tier": 5
+   }
+  ],
+  "planet_visibility": [
+   {
+    "id": "Mercury",
+    "name": "Mercury",
+    "status": "NOT_VISIBLE",
+    "visibility": "not_visible",
+    "max_alt": -9,
+    "constellation": "Libra",
+    "constellation_code": "Lib",
+    "magnitude": 3,
+    "evening_altitude": -22,
+    "morning_altitude": -9,
+    "midnight_altitude": -64
+   },
+   {
+    "id": "Venus",
+    "name": "Venus",
+    "status": "NOT_VISIBLE",
+    "visibility": "not_visible",
+    "max_alt": 3,
+    "constellation": "Virgo",
+    "constellation_code": "Vir",
+    "magnitude": -4.6,
+    "evening_altitude": -33,
+    "morning_altitude": 3,
+    "midnight_altitude": -57
+   },
+   {
+    "id": "Mars",
+    "name": "Mars",
+    "status": "MORNING",
+    "visibility": "morning",
+    "max_alt": 61,
+    "constellation": "Leo",
+    "constellation_code": "Leo",
+    "magnitude": 0.8,
+    "evening_altitude": -18,
+    "morning_altitude": 61,
+    "midnight_altitude": 1
+   },
+   {
+    "id": "Jupiter",
+    "name": "Jupiter",
+    "status": "MORNING",
+    "visibility": "morning",
+    "max_alt": 58,
+    "constellation": "Leo",
+    "constellation_code": "Leo",
+    "magnitude": -2,
+    "evening_altitude": -20,
+    "morning_altitude": 58,
+    "midnight_altitude": -2
+   },
+   {
+    "id": "Saturn",
+    "name": "Saturn",
+    "status": "ALL_NIGHT",
+    "visibility": "all_night",
+    "max_alt": 42,
+    "constellation": "Cetus",
+    "constellation_code": "Cet",
+    "magnitude": 0.5,
+    "evening_altitude": 38,
+    "morning_altitude": 12,
+    "midnight_altitude": 42
+   },
+   {
+    "id": "Uranus",
+    "name": "Uranus",
+    "status": "ALL_NIGHT",
+    "visibility": "all_night",
+    "max_alt": 66,
+    "constellation": "Taurus",
+    "constellation_code": "Tau",
+    "magnitude": 5.7,
+    "evening_altitude": 36,
+    "morning_altitude": 51,
+    "midnight_altitude": 66
+   },
+   {
+    "id": "Neptune",
+    "name": "Neptune",
+    "status": "ALL_NIGHT",
+    "visibility": "all_night",
+    "max_alt": 38,
+    "constellation": "Pisces",
+    "constellation_code": "Psc",
+    "magnitude": 7.7,
+    "evening_altitude": 38,
+    "morning_altitude": 6,
+    "midnight_altitude": 36
+   }
+  ],
+  "planet_alignments": {
+   "type": "PLANET_ALIGNMENT",
+   "name": "Planetary Alignment",
+   "datetime": "2026-11-13T13:42:59.300Z",
+   "timestamp": 1794577379,
+   "planets": [
+    "Mars",
+    "Jupiter",
+    "Venus",
+    "Mercury"
+   ],
+   "count": 4,
+   "angular_span": 70,
+   "period": "MORNING",
+   "start_date": "2026-11-04",
+   "end_date": "2026-12-28",
+   "highlight_tier": 4
+  }
+ }
+}
